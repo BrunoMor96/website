@@ -1,0 +1,125 @@
+.contact-section{
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.contact-section .row{
+  box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.14);
+  border-radius: 15px;
+  padding: 10% 0;
+  width: 100%;
+  background-image: url(../assets/images/section-contact/contact.png);
+  background-size: 46%;
+  background-repeat: no-repeat;
+}
+
+.contact-section h5{
+  font-size: 28px;
+  line-height: 1.21;
+  color: #606060;
+  margin-right: 20%;
+}
+
+.contact-section p{
+  margin: 20px 20% 20px 0  !important;
+  font-size: 19px;
+  line-height: 1.21;
+  color: #606060;
+}
+
+.contact-section span{
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 1.08;
+  color: #606060;
+}
+
+.contact-section .boton-group{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.contact-section .boton-group a{
+  margin-right: 10px;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.contact-section .boton-group .asesora{
+  background-color: #ff5722;
+  box-shadow      : 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+  color           : #fff;
+  border-radius   : 100px;
+  outline         : 0;
+  border          : none;
+  text-align: center;
+  height: 40px;
+  line-height     : 36px;
+  padding         : 2px 15px;
+  display         : inline-block;
+  transition      : all .3s;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.contact-section .boton-group .asesora:hover{
+  box-shadow: 0 5px 5px -3px rgb(0 0 0 / 20%), 0 8px 10px 1px rgb(0 0 0 / 14%), 0 3px 14px 2px rgb(0 0 0 / 12%);
+}
+
+.contact-section .boton-group .begin-now{
+  color           : #ff5722;
+  border-radius   : 100px;
+  outline         : 0;
+  border          : 1px solid #ff5722;
+  text-align: center;
+  height: 40px;
+  line-height     : 36px;
+  padding         : 2px 15px;
+  display         : inline-block;
+  transition      : all .3s;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.contact-section .boton-group .begin-now:hover{
+  background-color: rgba(242, 90, 0, 0.05);
+}
+
+@media only screen and (max-width: 767px) {
+
+  .contact-section .image{
+    display: none;
+  }
+
+  .contact-section .premium{
+    text-align: center;
+    padding: 10%;
+  }
+
+  .contact-section h5{
+    margin: auto;
+  }
+
+  .contact-section p {
+    margin: 20px 0 !important;
+  }
+
+  .contact-section .boton-group {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-section .row {
+    box-shadow: none;
+  }
+
+  .contact-section .row{
+    background-image: none;
+  }
+
+}

@@ -1,0 +1,468 @@
+.footer-section {
+  padding         : 130.9px 70.6px 204.9px 91px;
+  background-color: #f4f7f9;
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+  margin-top      : 70px;
+  z-index         : 1;
+}
+
+.footer {
+  width : 1500px;
+  height: 420px;
+  margin: 50.6px 0 0;
+}
+
+.footer-options {
+  padding         : 0px 70.6px 0 91px;
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+  background-color: #f4f7f9;
+  margin-top      : -60px;
+  position        : relative;
+  z-index         : 3;
+}
+
+.to-up {
+  background-image: linear-gradient(360deg, #f4f7f9 50%, white 50%);
+  box-shadow      : 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
+  transition      : .3s color ease-in-out;
+  position        : relative;
+  bottom          : 35px;
+  width           : 50px;
+  height          : 50px;
+  border-radius   : 50%;
+  outline         : none;
+  border          : none;
+  z-index         : 2;
+}
+
+.to-up:hover {
+  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
+}
+
+.footer-down {
+  border-top     : 1.5px solid #e1e1e1;
+  height         : 80px;
+  width          : 1500px;
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+}
+
+.footer-down .copy {
+  font-size  : 16px;
+  line-height: 1.19;
+  color      : #767676;
+}
+
+.footer-down .languaje {
+  margin-left: -100px;
+}
+
+.footer-down .languaje .espanol {
+  margin-right: 15px;
+  font-size   : 16px;
+  font-weight : bold;
+  line-height : 1.19;
+  color       : #767676;
+}
+
+.footer-down .languaje .separador {
+  width : 0;
+  height: 21px;
+  border: solid 1px #767676;
+}
+
+.footer-down .languaje .ingles {
+  margin-left: 15px;
+  font-size  : 16px;
+  line-height: 1.19;
+  color      : #767676;
+}
+
+.footer-down .socials {}
+
+.footer .subscribe img {
+  margin-bottom: 20px;
+}
+
+.footer .subscribe p {
+  width         : 355px;
+  height        : 54px;
+  font-size     : 15px;
+  line-height   : 1.2;
+  letter-spacing: 0.3px;
+  color         : #898989;
+}
+
+.footer .subscribe label {
+  margin     : 23px 0;
+  width      : 294px;
+  height     : 20px;
+  font-size  : 17px;
+  line-height: 1.18;
+  color      : #898989;
+}
+
+.footer .subscribe .text {
+  width           : 301px;
+  height          : 49px;
+  padding         : 14.6px 13.5px 11.4px 12px;
+  background-color: #ebeff1;
+  border-radius   : 20px 20px 0 0;
+  border          : none;
+  outline         : none;
+  color           : #898989;
+}
+
+.footer .subscribe .acept-polic {
+  display    : flex;
+  align-items: center;
+}
+
+.acept {
+  display            : block;
+  position           : relative;
+  padding-left       : 35px;
+  margin-bottom      : 12px;
+  -webkit-user-select: none;
+  -moz-user-select   : none;
+  -ms-user-select    : none;
+  user-select        : none;
+  font-size          : 18px !important;
+  line-height        : 1.2;
+  color              : #898989;
+}
+
+/* Hide the browser's default checkbox */
+.acept input {
+  position: absolute;
+  opacity : 0;
+  height  : 0;
+  width   : 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position        : absolute;
+  top             : 2px;
+  left            : 0;
+  height          : 22px;
+  width           : 22px;
+  border-radius   : 7px;
+  border          : solid 1px #898989;
+  background-color: transparent;
+}
+
+/* On mouse-over, add a grey background color */
+.acept:hover input~.checkmark {
+  background-color: #f4f8f9;
+}
+
+/* When the checkbox is checked, add a blue background */
+.acept input:checked~.checkmark {
+  background-color: #ff5722;
+  border          : solid 1px #ff5722;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content : "";
+  position: absolute;
+  display : none;
+}
+
+/* Show the checkmark when checked */
+.acept input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.acept .checkmark:after {
+  left   : 4px;
+  top    : -2px;
+  content: url(../assets/images/section-footer/check-icon.png);
+  color  : white;
+}
+
+.footer button {
+  margin-top      : 20px;
+  width           : 301px;
+  height          : 36px;
+  border-radius   : 21px;
+  text-align      : center;
+  transition      : all .3s;
+  background-color: #ff5722;
+  color           : white;
+  border          : none;
+  box-shadow      : 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+}
+
+.footer button:hover {
+  box-shadow: 0 5px 5px -3px rgb(0 0 0 / 20%), 0 8px 10px 1px rgb(0 0 0 / 14%), 0 3px 14px 2px rgb(0 0 0 / 12%);
+}
+
+.links-footer ul,
+.links-contact ul {
+  list-style  : none;
+  padding-left: 0;
+  line-height : 2;
+}
+
+.links-footer ul li a,
+.links-contact ul li a {
+  font-size  : 17px;
+  line-height: 1.53;
+  color      : #898989 !important;
+}
+
+.links-footer ul li:last-child a {
+  color: #f50b0b !important;
+}
+
+.links-contact ul li:nth-child(4) a,
+.links-contact ul li:nth-child(5) a {
+  text-decoration: underline;
+}
+
+.links-contact img {
+  width     : 60%;
+  margin-top: 25px;
+}
+
+.footer-section .links-landing {
+  margin-top: 50px;
+}
+
+.footer-section .links-landing span {
+  font-size  : 20px;
+  line-height: 1.45;
+  color      : #8a8a8a;
+}
+
+.url-landing {
+  display        : flex;
+  justify-content: flex-start;
+  flex-wrap      : wrap;
+}
+
+.links-landing .icons-footer {
+  display        : flex;
+  justify-content: center;
+}
+
+.links-landing .icons-footer .group-icons {
+  width          : 150px;
+  display        : flex;
+  justify-content: center;
+  flex-wrap      : wrap;
+  margin-top     : 30px;
+  display        : none;
+}
+
+.links-landing .icons-footer .group-icons img {
+  width     : 100%;
+  margin-top: 20px;
+}
+
+.footer-section .links-landing a {
+  padding        : 3px 15px 0 0;
+  border-radius  : 20px;
+  font-size      : 16px;
+  text-decoration: none;
+  margin         : 10px 15px 10px 0px;
+}
+
+.footer-section .links-landing a img {
+  margin-right: 10px;
+  height      : 43px;
+  margin-top  : -3px;
+  margin-left : -2px;
+}
+
+.footer-section .links-landing .go-to-kinder {
+  border    : 1px solid #7e43ff;
+  transition: all .3s;
+  color     : #7e43ff;
+}
+
+.footer-section .links-landing .go-to-kinder:hover {
+  color           : #7e43ff;
+  background-color: #decfff;
+}
+
+.footer-section .links-landing .go-to-school {
+  border    : 1px solid #5571f5;
+  transition: all .3s;
+  color     : #5571f5;
+}
+
+.footer-section .links-landing .go-to-school:hover {
+  color           : #5571f5;
+  background-color: #dbe1ff;
+}
+
+.footer-section .links-landing .go-to-group {
+  border    : 1px solid #4a6572;
+  transition: all .3s;
+  color     : #4a6572;
+}
+
+.footer-section .links-landing .go-to-group:hover {
+  color           : #4a6572;
+  background-color: #c1d2db;
+}
+
+.footer-section .links-landing .go-to-public {
+  border    : 1px solid #0064c6;
+  transition: all .3s;
+  color     : #0064c6;
+}
+
+.footer-section .links-landing .go-to-public:hover {
+  color           : #0064c6;
+  background-color: #c4d5e5;
+}
+
+
+/* MODAL  */
+
+.modal-content {
+  border       : none !important;
+  padding      : 27px;
+  border-radius: 15px !important;
+  width        : 480px !important;
+  box-shadow   : 0 11px 15px -7px rgb(0 0 0 / 20%), 0 24px 38px 3px rgb(0 0 0 / 14%), 0 9px 46px 8px rgb(0 0 0 / 12%);
+}
+
+.modal-backdrop.show {
+  opacity   : 1 !important;
+  background: rgba(255, 255, 255, .95);
+}
+
+#mc_embed_signup_scroll h2 {
+  line-height   : 1;
+  font-size     : 22px;
+  letter-spacing: 0;
+  margin        : 0 0 20px;
+  color         : #898989;
+}
+
+.input-form {
+  width                  : 100%;
+  border-top-right-radius: 16px !important;
+  border-top-left-radius : 16px !important;
+  background-color       : #f3f3f3 !important;
+  border                 : 0 !important;
+  border-bottom          : 1px solid rgba(0, 0, 0, 0.08) !important;
+  height                 : 55px !important;
+  outline                : none !important;
+  padding                : 10px !important;
+  color                  : gray !important;
+  float                  : left;
+  margin                 : 10px 10px 20px 0;
+}
+
+#mc_embed_signup div.mce_inline_error {
+  margin     : 0 !important;
+  padding    : 0 !important;
+  background : none !important;
+  z-index    : 1;
+  color      : #ff5722 !important;
+  font-size  : 12px;
+  font-weight: normal !important;
+}
+
+.clear input {
+  margin-top      : 20px;
+  width           : 100%;
+  height          : 45px;
+  border-radius   : 21px;
+  text-align      : center;
+  transition      : all .3s;
+  background-color: #ff5722;
+  color           : white;
+  border          : none;
+  box-shadow      : 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+  outline         : none;
+}
+
+.clear input:hover {
+  box-shadow: 0 5px 5px -3px rgb(0 0 0 / 20%), 0 8px 10px 1px rgb(0 0 0 / 14%), 0 3px 14px 2px rgb(0 0 0 / 12%);
+}
+
+.response {
+  font-size : 20px;
+  color     : #ff5722 !important;
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+
+  .footer-section {
+    padding: 0 40px 100px 40px;
+  }
+
+  .footer .subscribe img {
+    width: 160px;
+  }
+
+  .footer .subscribe p {
+    width: auto;
+  }
+
+  .subscribe {
+    margin-bottom: 35px;
+  }
+
+  .footer {
+    height    : 100%;
+    text-align: left;
+  }
+
+  .footer button {
+    width: 100%;
+  }
+
+  .footer .subscribe label {
+    width: auto;
+  }
+
+}
+
+@media only screen and (max-width: 650px) {
+
+  .footer .subscribe .text {
+    width: 100%
+  }
+
+  .footer-options {
+    padding: 0 30px;
+  }
+
+  .links-contact img {
+    display: none;
+  }
+
+  .links-landing .icons-footer .group-icons {
+    display: block;
+  }
+
+  .footer-down .copy,
+  .footer-down .languaje .espanol,
+  .footer-down .languaje .ingles {
+    font-size: 13px;
+  }
+
+  .footer-down .socials {
+    display: none;
+  }
+
+  .url-landing {
+    max-width: 250px;
+  }
+
+}

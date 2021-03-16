@@ -1,0 +1,188 @@
+.blog-section h1 {
+  text-align: center;
+  margin-top: 80px;
+  color     : #606060;
+  font-size : 45px;
+}
+
+.blog-section {
+  max-height: calc(765px + 9 * ((100vw - 320px)/ 1224));
+}
+
+.blogger{
+  margin: 0 70px !important
+}
+
+.text-blog {
+  padding-left: 20px !important;
+}
+
+.text-blog span {
+  font-size  : 15px;
+  line-height: 1.2;
+  color      : #606060;
+}
+
+.text-blog .title-blog {
+  width      : 354px;
+  font-size  : 35px;
+  line-height: 1.22;
+  text-align : left;
+  color      : #606060;
+  margin     : 10px 0 !important
+}
+
+.text-blog .content-blog {
+  width      : 457px;
+  font-size  : 20px;
+  font-style : italic;
+  line-height: 1.32;
+  text-align : left;
+  color      : #606060;
+  margin-bottom: 40px !important;
+}
+
+.swiper4 {
+  padding-right: 15px !important;
+}
+
+.swiper4 .swiper-wrapper {
+  display              : -ms-inline-grid;
+  grid-template-columns: 200px 200px 200px 200px 200px;
+  padding: 0 30px;
+}
+
+.swiper4 .swip-img img {
+  width        : 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.swiper4 .swip-img p {
+  border-radius: 10px;
+  margin-bottom: 5px !important;
+  font-size    : 12px;
+  line-height  : 0.92;
+  color        : #606060;
+}
+
+.swiper4 .lastblog {
+  width        : 50px;
+  height       : 125px;
+  border-radius: 10px;
+  display      : flex;
+  font-size    : 20px;
+  line-height  : 0.92;
+  padding      : 40px;
+  color        : #606060;
+  align-items  : center;
+  text-align   : center;
+  box-shadow   : 0 5px 5px -3px rgb(0 0 0 / 20%), 0 8px 10px 1px rgb(0 0 0 / 14%), 0 3px 14px 2px rgb(0 0 0 / 12%);
+
+}
+
+.swiper-button-next4,
+.swiper-button-prev4 {
+  top: 20px !important;
+  height: 100% !important;
+  width: 90px !important;
+  transition: all .3s;
+  outline   : none;
+}
+
+.swiper-button-prev4.swiper-button-disabled,
+.swiper-button-next4.swiper-button-disabled {
+  opacity   : 0 !important;
+  transition: all .3s;
+}
+
+.swiper-button-prev4{
+  left: -20px !important;
+  background: linear-gradient(to right, #fefefe 85%, rgba(255, 255, 255, 0.92) 40%, rgba(255, 255, 255, 0) 100%);
+}
+
+.swiper-button-next4{
+  right: -10px !important;
+  background: linear-gradient(to left, #fefefe 85%, rgba(255, 255, 255, 0.92) 40%, rgba(255, 255, 255, 0) 100%);
+}
+
+.swiper-button-prev4:after {
+  content          : url(../assets/images/icons/arroz-up.png) !important;
+  width            : 35px;
+  height           : 35px;
+  box-shadow       : 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color : #ffffff;
+  border-radius    : 50%;
+  -moz-transform   : rotate(-90deg);
+  -o-transform     : rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform        : rotate(-90deg);
+  outline          : none !important;
+  font-size: 1px !important;
+  padding-top: 12px;
+  padding-left: 8px;
+  margin-left: 10px !important;
+  transition: all .3s;
+}
+
+.swiper-button-next4:after {
+  content          : url(../assets/images/icons/arroz-up.png) !important;
+  width            : 35px;
+  height           : 35px;
+  box-shadow       : 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color : #ffffff;
+  border-radius    : 50%;
+  -moz-transform   : rotate(90deg);
+  -o-transform     : rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform        : rotate(90deg);
+  outline          : none !important;
+  font-size: 1px !important;
+  padding-top: 12px;
+  padding-left: 8px;
+  margin-left: 0px !important;
+  transition: all .3s;
+}
+
+.swiper-button-prev4:hover:after,
+.swiper-button-next4:hover:after{
+  box-shadow: 0 5px 5px -3px rgb(0 0 0 / 20%), 0 8px 10px 1px rgb(0 0 0 / 14%), 0 3px 14px 2px rgb(0 0 0 / 12%);
+}
+
+
+@media only screen and (max-width: 768px) {
+  .blog-section {
+    max-height: calc(865px + 9 * ((100vw - 320px)/ 1224));
+    padding: 20px;
+  }
+
+  .blogger{
+    margin: 0 !important
+  }
+
+  .text-blog .title-blog {
+    width      : auto;
+    font-size: 22px;
+  }
+  
+  .text-blog .content-blog {
+    width      : auto;
+    font-size: 18px;
+  }
+
+  .blog-section h1 {
+    font-size: 25px;
+    padding  : 0 20px;
+  }
+
+  .swiper-button-prev4{
+    background: none;
+  }
+  
+  .swiper-button-next4{
+    background: none;
+  }
+
+
+}
+

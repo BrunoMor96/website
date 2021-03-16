@@ -1,0 +1,439 @@
+.testimonios-section {
+  height: auto;
+}
+
+.testimonios-section h1 {
+  color        : #606060;
+  text-align   : center;
+  font-size    : 45px;
+  margin-bottom: 40px;
+}
+
+.slider-outer-wrapper {
+  overflow: hidden;
+  width   : 100%;
+  height  : 100%;
+  position: relative;
+
+}
+
+.fondo {
+  background-color: black;
+}
+
+.slider-outer-wrapper .slider-inner-wrapper {
+  height         : 100%;
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+}
+
+.slider-outer-wrapper .slider-inner-wrapper.is-animating {
+  transition: all 400ms;
+}
+
+.slider-outer-wrapper .slider-inner-wrapper .slide {
+  width  : 100%;
+  padding: 70px;
+}
+
+.slider-outer-wrapper .slider-inner-wrapper .slide {
+  background-repeat  : no-repeat;
+  background-size    : contain;
+  background-position: 130%;
+}
+
+.slider-outer-wrapper .slider-inner-wrapper .kinder-slide {
+  background-image: url(../assets/images/section-testimonios/fondo-kinder.png);
+
+}
+
+.slider-outer-wrapper .slider-inner-wrapper .schools-slide {
+  background-image: url(../assets/images/section-testimonios/fondo-school.png);
+}
+
+.slider-outer-wrapper .slider-inner-wrapper .group-slide {
+  background-image   : url(../assets/images/section-testimonios/fondo-group.png);
+  background-position: 100%;
+}
+
+.slider-outer-wrapper .slider-inner-wrapper .public-slide {
+  background-image   : url(../assets/images/section-testimonios/fondo-public.png);
+  background-position: 200%;
+}
+
+.slider-outer-wrapper .navigation {
+  z-index  : 2;
+  position : absolute;
+  bottom   : 20px;
+  left     : 50%;
+  transform: translate(-50%, 0);
+}
+
+.slider-outer-wrapper .navigation button {
+  width           : 41px;
+  height          : 4px;
+  border          : none;
+  background-color: #ff5722;
+  opacity         : 0.47;
+  border-radius   : 10px;
+  margin          : 0 6px 0 0;
+}
+
+.slider-outer-wrapper .navigation button.bullet-active {
+  background-color: #ff5722;
+  opacity         : 1;
+}
+
+.slider-outer-wrapper .navigation button:focus {
+  outline: none;
+}
+
+.slider-outer-wrapper .navigation button:last-child {
+  margin: 0 0 0 0;
+}
+
+.testi-1 .h4 {
+  width         : 419px;
+  height        : 101px;
+  font-size     : 45px !important;
+  font-weight   : bold;
+  font-stretch  : normal;
+  font-style    : normal;
+  line-height   : 0.8;
+  letter-spacing: normal;
+  text-align    : left;
+  color         : #606060;
+}
+
+.testi-1 img {
+  margin: 0 25px 30px 0px;
+}
+
+.testi-1 button {
+  margin-top: 30px;
+}
+
+.testi-1 button:hover {
+  background-color: rgba(242, 90, 0, 0.05);
+}
+
+.testi-1 button img {
+  margin    : auto;
+  margin-top: -3px;
+}
+
+.testi-1 button span {
+  padding  : 2px 15px;
+  font-size: 18px;
+}
+
+.testi-1 .span {
+  margin        : 16.9px 8.2px 42.9px 0;
+  font-size     : 20px;
+  width         : 384px;
+  line-height   : 1.2;
+  letter-spacing: normal;
+  text-align    : left;
+  color         : #606060;
+}
+
+
+.see-history {
+  background-color: #ff5722;
+  box-shadow      : 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+  color           : #fff;
+  border-radius   : 100px;
+  outline         : 0;
+  border          : none;
+  min-width       : 64px;
+  line-height     : 36px;
+  padding         : 5px 25px;
+  margin-top      : 20px;
+  display         : inline-block;
+  transition      : all .3s;
+  font-size       : 15px;
+}
+
+.see-history:hover {
+  box-shadow: 0 5px 5px -3px rgb(0 0 0 / 20%), 0 8px 10px 1px rgb(0 0 0 / 14%), 0 3px 14px 2px rgb(0 0 0 / 12%);
+}
+
+.see-kinder {}
+
+.personaje,
+.info-personaje {
+  justify-content: center;
+  display        : flex;
+}
+
+.personaje img {
+  position: absolute;
+  top     : 0px;
+  width   : 130px;
+  height  : 130px;
+}
+
+.text-personaje {
+  width           : 380px;
+  height          : 340px;
+  padding         : 71.4px 56px 35.7px 57px;
+  border-radius   : 15px;
+  box-shadow      : 0 3px 30px 0 rgba(0, 0, 0, 0.16);
+  text-align      : center;
+  background-color: white;
+  display         : flex;
+  flex-direction  : column;
+  align-items     : center;
+  justify-content : center;
+}
+
+.text-personaje-video {
+  width        : 380px;
+  height       : 340px;
+  padding      : 0 57px;
+  border-radius: left;
+}
+
+.text-personaje-video h6 {
+  width         : 419px;
+  height        : 101px;
+  font-size     : 45px !important;
+  font-stretch  : normal;
+  font-style    : normal;
+  line-height   : 0.8;
+  letter-spacing: normal;
+  text-align    : left;
+  color         : #606060;
+}
+
+.text-personaje-video p {
+  font-size     : 20px;
+  width         : 384px;
+  line-height   : 1.2;
+  letter-spacing: normal;
+  text-align    : left;
+  color         : #606060;
+}
+
+.text-personaje-video button {
+  border-radius   : 100px;
+  height          : 48px;
+  background-color: transparent;
+  outline         : 0;
+  min-width       : 64px;
+  line-height     : 36px;
+  display         : inline-block;
+  transition      : all .3s;
+  text-align      : center;
+  padding         : 0 12px;
+}
+
+.text-personaje-video .see-kinder {
+  border: 1px solid #7E43FF;
+  color : #7E43FF;
+}
+
+.text-personaje-video .see-kinder:hover {
+  background-color: #f1ecfe;
+}
+
+.text-personaje-video .see-school {
+  border: 1px solid #5974EC;
+  color : #5974EC;
+}
+
+.text-personaje-video .see-school:hover {
+  background-color: #eff1fd;
+}
+
+.text-personaje-video .see-group {
+  border: 1px solid #4A6572;
+  color : #4A6572;
+}
+
+.text-personaje-video .see-group:hover {
+  background-color: #edf0f1;
+}
+
+.text-personaje-video .see-public {
+  border: 1px solid #0064c6;
+  color : #0064c6;
+}
+
+.text-personaje-video .see-public:hover {
+  background-color: #e6f0f9;
+}
+
+
+.text-personaje p {
+  font-size    : 20px;
+  font-style   : italic;
+  line-height  : 1.2;
+  color        : #5f5f5f;
+  margin-bottom: 20px !important;
+}
+
+.text-personaje span {
+  margin-top : 20px !important;
+  font-size  : 14px;
+  line-height: 1.18;
+  color      : #707070;
+}
+
+.swiper2 {
+  display: none;
+}
+
+
+@media only screen and (max-width: 650px) {
+
+  .testimonios-section h1 {
+    font-size : 25px;
+    margin-top: 25px;
+  }
+
+  .slider-outer-wrapper {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .testimonios-section h1 {
+    font-size: 25px;
+    padding  : 0 20px;
+  }
+
+  .slider-outer-wrapper {
+    display: none;
+  }
+
+  .swiper2 {
+    display: block;
+  }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .testimonios-section {
+    height: auto;
+  }
+
+  .slide-swipper .h4 {
+    margin     : 0 20px 27.1px;
+    font-size  : 20px;
+    font-weight: bold;
+    line-height: 2;
+    color      : #606060;
+    text-align : center;
+  }
+
+  .slide-swipper .span {
+    font-size    : 15px;
+    line-height  : 1.67;
+    text-align   : center;
+    min-height   : 90px;
+    color        : #606060;
+    padding      : 0 30px;
+    margin-bottom: 20px !important;
+    text-align   : center;
+  }
+
+  .personaje-movile {
+    display        : flex;
+    justify-content: center;
+  }
+
+  .slide-swipper .person {
+    position    : absolute;
+    width       : 100px;
+    margin-left : auto;
+    margin-right: auto;
+    left        : 0;
+    right       : 0;
+  }
+
+  .text-personaje-movile {
+    width           : 330px;
+    height          : 310px;
+    border-radius   : 15px;
+    box-shadow      : 0 3px 30px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    margin-top      : 50px;
+  }
+
+  .text-personaje-movile p {
+    font-size  : 20px;
+    font-style : italic;
+    line-height: 1.2;
+    text-align : center;
+    color      : #5f5f5f;
+    padding    : 0 30px;
+    margin-top : 70px !important;
+  }
+
+  .text-personaje-movile .span {
+    padding       : 0 30px;
+    font-size     : 12px;
+    font-stretch  : normal;
+    font-style    : normal;
+    line-height   : 1.3;
+    letter-spacing: normal;
+    text-align    : left;
+    color         : #707070;
+    font-weight   : bold;
+    margin-top    : 20px;
+  }
+
+  .text-personaje-movile .span p {
+    padding       : 0 !important;
+    font-size     : 12px;
+    font-stretch  : normal;
+    font-style    : normal;
+    line-height   : 1.3;
+    letter-spacing: normal;
+    text-align    : left;
+    color         : #707070;
+    margin-top    : 0 !important;
+  }
+
+  .swiper2>.swiper-pagination-bullets {
+    bottom: 70px !important;
+  }
+
+  .button-history {
+    width          : 100%;
+    display        : flex;
+    justify-content: center;
+    margin-top     : 60px;
+    margin-bottom  : 10px;
+  }
+
+  .swiper-pagination-bullet {
+    width           : 41px !important;
+    height          : 4px !important;
+    border          : none;
+    background-color: #ff5722 !important;
+    opacity         : 0.47;
+    border-radius   : 10px !important
+  }
+
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+  }
+
+}
+
+@media only screen and (min-width: 1600px) {
+
+  .slider-outer-wrapper .slider-inner-wrapper .kinder-slide,
+  .slider-outer-wrapper .slider-inner-wrapper .schools-slide,
+  .slider-outer-wrapper .slider-inner-wrapper .group-slide,
+  .slider-outer-wrapper .slider-inner-wrapper .public-slide {
+    background-position: 115%;
+  }
+
+}

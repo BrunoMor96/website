@@ -1,0 +1,83 @@
+@font-face {
+  font-family: 'Product Sans';
+  font-style : normal;
+  font-weight: 400;
+  src        : local('Open Sans'), local('OpenSans'), url(../fonts/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Product Sans Regular';
+  src        : url(../fonts/ProductSans-Regular.ttf) format('truetype');
+  font-style : normal;
+  font-weight: normal;
+}
+
+* {
+  margin     : 0;
+  padding    : 0;
+  box-sizing : border-box;
+  font-family: sans-serif;
+  font-family: Product Sans;
+}
+
+html {
+  overflow-x      : hidden;
+  background-color: #fefefe;
+  cursor          : url(../assets/images/icons/cursor_arrow2.png), pointer;
+}
+
+a,
+button,
+.listitem,
+.md-tab,
+.swiper-pagination-bullet,
+.accordion__tab,
+.acept,
+.swip-img,
+.lastblog,
+#logo {
+  cursor: url(../assets/images/icons/cursor_hand2.png), pointer !important;
+}
+
+p {
+  margin: 0 !important;
+}
+
+body::-webkit-scrollbar {
+  width : 13px;
+  height: 100px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background   : #c1c1c1;
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #e8e4e4;
+}
+
+header .menu-area .ani1 {
+  position        : absolute;
+  background-color: #ff5722;
+  z-index         : -1;
+  transition     : all .3s;
+  opacity         : 0;
+  height: 3px !important;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: 22px;
+}
+
+header .menu-area .ani1.active {
+  opacity: 1;
+  height: 140px;
+}
+
+.background{
+  color: #ff5722;
+}
+
+.espacio{
+  opacity: 0;
+}
