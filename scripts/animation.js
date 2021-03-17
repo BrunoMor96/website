@@ -146,10 +146,6 @@ const dialog = document.querySelector('dialog');
 const input = document.querySelector('input');
 const output = document.querySelector('output');
 
-input.addEventListener('change', e => {
-  apply.value = e.target.value;
-});
-
 openModal.addEventListener('click', () => {
   dialog.showModal();
 });
