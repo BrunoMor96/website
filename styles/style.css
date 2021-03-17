@@ -26,6 +26,8 @@ html {
   cursor          : url(../assets/images/icons/cursor_arrow2.png), pointer;
 }
 
+.block-scroll {overflow:hidden}
+
 a,
 button,
 .listitem,
@@ -58,26 +60,32 @@ body::-webkit-scrollbar-track {
 }
 
 header .menu-area .ani1 {
-  position        : absolute;
-  background-color: #ff5722;
-  z-index         : -1;
-  transition     : all .3s;
-  opacity         : 0;
-  height: 3px !important;
-  border-top-left-radius: 10px;
+  position               : absolute;
+  background-color       : #ff5722;
+  z-index                : -1;
+  transition             : all .3s;
+  opacity                : 0;
+  height                 : 3px !important;
+  border-top-left-radius : 10px;
   border-top-right-radius: 10px;
-  margin-top: 22px;
+  margin-top             : 22px;
 }
 
 header .menu-area .ani1.active {
   opacity: 1;
-  height: 140px;
+  height : 140px;
 }
 
-.background{
+.background {
   color: #ff5722;
 }
 
-.espacio{
+.espacio {
   opacity: 0;
+}
+
+@media screen and (max-width:1024px) {
+  header .menu-area .ani1 {
+    height: 0px !important
+  }
 }

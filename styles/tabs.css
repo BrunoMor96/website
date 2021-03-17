@@ -132,6 +132,10 @@ md-tabs .md-tab.md-active{
   display: flex;
 }
 
+.content-academica ul li img{
+  width: 22px;
+}
+
 @media only screen and (max-width: 650px) {
 
   md-pagination-wrapper md-tab-item{

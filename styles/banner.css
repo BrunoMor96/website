@@ -146,6 +146,8 @@
 .content-banner .proms img {
   margin-right: 30px;
   margin-top  : 35px;
+  width: auto;
+  height: 25px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -178,6 +180,9 @@
     max-height: 100%;
     height    : calc(220px + 9 * ((100vw - 320px)/ 1224)) !important;
     margin    : 20px 0;
+  }
+  .content-banner .proms img {
+    height: 18px;
   }
 }
 

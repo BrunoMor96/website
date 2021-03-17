@@ -20,13 +20,24 @@ nav #menuBtn {
   display: none;
 }
 
+.menuBtn img{
+  width: 25px;
+}
+
 nav .menuBtn {
   font-size: 25px;
-  color    : #747474;
+  color    : transparent;
   position : absolute;
   display  : none;
   right    : 25px;
-  top      : 16px;
+  top      : 24px;
+}
+
+nav .menuBtn i{
+  background-image: url(../assets/images/icons/menu-icon.png);
+    background-repeat: no-repeat;
+    /* height: 200px; */
+    background-size: contain;
 }
 
 nav .logo {
@@ -117,6 +128,11 @@ nav ul li a.active {
 
   nav {
     height: calc(70px + 9 * ((100vw - 320px)/ 1224));
+    top: -1px;
+  }
+
+  .header-ul {
+    margin-top: 17px;
   }
 
   nav .logo {
@@ -134,7 +150,7 @@ nav ul li a.active {
     background    : white;
     width         : 100%;
     height        : 100%;
-    top           : 50px;
+    top           : 50px !important;
     padding-top   : 30px;
     margin-top    : 20px;
     display       : flex;
@@ -155,20 +171,34 @@ nav ul li a.active {
   nav ul li a {
     display  : block;
     font-size: 24px;
+    height: 48px;
+  }
+
+  .espacio{
+    height: 0;
+  }
+
+  nav ul .empieza {
+    margin-top: 25px;
+  }
+
+  nav ul .ventas {
+    margin-top: 35px;
   }
 
   nav .menu-area #menuBtn:checked~ul {
     left: 0;
-    top: 100px;
+    top: 0;
   }
 
   nav .menu-area #menuBtn:checked~label.menuBtn i::before {
-    content : "x";
+    content : "\f00d";
     z-index : 999;
     color   : #898989;
     position: absolute;
-    top     : 5px;
+    top     : 0;
     right   : 5px;
+    opacity: 0.5;
   }
 
   .begin-smiledu, .sales-smiledu{
@@ -179,6 +209,11 @@ nav ul li a.active {
 
   nav .header-ul lo a img{
     width: 25%;
+  }
+
+  .search{
+    justify-content: center;
+    display: flex;
   }
 
 }

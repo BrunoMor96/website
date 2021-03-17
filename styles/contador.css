@@ -69,6 +69,10 @@
   margin: 0 20px;
 }
 
+.star img{
+  width: 20px;
+}
+
 @media only screen and (max-width: 767px) {
 
   .raya{

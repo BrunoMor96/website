@@ -1,5 +1,18 @@
+// scrollAnimation
 AOS.init();
 
+// AniamtionModalInput
+$(".mat-input").focus(function(){
+  $(this).parent().addClass("is-active is-completed");
+});
+
+$(".mat-input").focusout(function(){
+  if($(this).val() === "")
+    $(this).parent().removeClass("is-completed");
+  $(this).parent().removeClass("is-active");
+})
+
+// NavAnimation
 const ani1 = document.querySelector('header .menu-area .ani1');
 const ani2 = document.querySelectorAll('header .menu-area ul li');
 
@@ -13,9 +26,6 @@ list.addEventListener('click', () => {
     ani1.style.height = position.height + 'px';
     ani1.style.width = position.width + 'px';
 });
-// list.addEventListener('mouseout', () => {
-//     ani1.classList.remove('active');
-// });
 });
 
 let buttons2 = document.querySelectorAll(".header-ul li a");
@@ -29,6 +39,7 @@ buttons2.forEach(button =>{
   })
 })
 
+// NavBorder
 $(window).scroll(function () {
   if ($("#border--bottom").offset().top > 56) {
     $("#border--bottom").addClass("border--bottom");
@@ -37,6 +48,8 @@ $(window).scroll(function () {
   }
 });
 
+
+// HoverAnimation
 $(function () { 
   $('#content').hover(function () {
      $('#text').css('opacity', '1'); 
@@ -51,6 +64,7 @@ $(function () {
      $('#text3').css('opacity', '0'); 
 }); });
 
+// ScrollTop
 $(document).ready(function() {
 	$('#volver-arriba').click(function(){ 
 		$('html, body').animate({scrollTop:0}, 'slow');
@@ -61,9 +75,14 @@ $(document).ready(function() {
 		return false;
 	});
 });
+// $(document).ready(function() {
+// 	$('#volverabajo').click(function(){ 
+// 		$('html, body').animate({scrollBottom:0}, 'slow');
+// 		return false;
+// 	});
+// });
 
-
-
+// AnimacionInfinitia
 var $holder = $(".holder");
 var $list = $holder.find("div.list");
 var $clonedList = $list.clone();
@@ -107,7 +126,6 @@ infinite2.to($clonedList2, time, {left: -listWidth2, ease: Linear.easeNone}, tim
 infinite2.to($list2, time, {left: 0, ease: Linear.easeNone}, time);
 
 //Pause/Play
-				
 $holder.on("mouseenter", function(){
 	infinite.pause();
 }).on("mouseleave", function(){
@@ -120,3 +138,29 @@ $holder2.on("mouseenter", function(){
 	infinite2.play();
 });
 
+//modal
+const openModal = document.querySelector('.open-modal');
+const closeModal = document.querySelector('.close-modal');
+const apply = document.querySelector('.apply');
+const dialog = document.querySelector('dialog');
+const input = document.querySelector('input');
+const output = document.querySelector('output');
+
+input.addEventListener('change', e => {
+  apply.value = e.target.value;
+});
+
+openModal.addEventListener('click', () => {
+  dialog.showModal();
+});
+
+//Activar desactivar scroll
+$(document).ready(function(){
+  var $body = $('html,body');
+  $('#subs').on('click', function() {
+      $body.addClass('block-scroll');
+  });
+  $('#close-modal').on('click', function() {
+      $body.removeClass('block-scroll');
+  });
+});
