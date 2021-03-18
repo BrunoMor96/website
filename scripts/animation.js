@@ -110,7 +110,7 @@ $clonedList2.addClass("cloned2").appendTo($holder2);
 
 //TimelineMax
 var infinite = new TimelineMax({repeat: -1, paused: false});
-var time = 30;
+var time = 70;
 var infinite2 = new TimelineMax({repeat: -1, paused: false});
 
 infinite.fromTo($list, time, {left:0}, {left: listWidth, ease: Linear.easeNone}, 0);
@@ -158,5 +158,25 @@ $(document).ready(function(){
   });
   $('#close-modal').on('click', function() {
       $body.removeClass('block-scroll');
+  });
+});
+
+//Buttons ripple
+const buttons = document.querySelectorAll(".ripple");
+
+buttons.forEach((button) => {
+  button.addEventListener("click", function (e) {
+    const x = e.clientX;
+    const y = e.clientY;
+    const buttonTop = e.target.offsetTop;
+    const buttonLeft = e.target.offsetLeft;
+    const xInside = x - buttonLeft;
+    const yInside = y - buttonTop;
+    const circle = document.createElement("span");
+    circle.classList.add("circle");
+    circle.style.top = yInside + "px";
+    circle.style.left = xInside + "px";
+    this.appendChild(circle);
+    setTimeout(() => circle.remove(), 500);
   });
 });

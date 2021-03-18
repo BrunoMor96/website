@@ -47,13 +47,14 @@ nav .logo {
 
 nav ul {
   float: right;
+  display: flex;
+  align-items: center;
 }
 
 .header-ul {
   margin-bottom: 0;
   z-index      : 99999999;
   margin-top: -40px;
-  margin-right: -70px;
 }
 
 nav ul li {
@@ -166,6 +167,10 @@ nav ul li a.active {
     min-width  : 80%;
     text-align : center;
     line-height: 4rem;
+  }
+
+  nav ul .ventas a:hover{
+    background: black !important;
   }
 
   nav ul li a {

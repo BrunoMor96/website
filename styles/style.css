@@ -84,6 +84,51 @@ header .menu-area .ani1.active {
   opacity: 0;
 }
 
+/* RIPLE */
+
+.seacrhi {
+  background-image: url(../assets/images/icons/search-icon.png);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position-x: 12px;
+  background-position-y: 12px;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  padding: 25px 25px;
+  overflow: hidden;
+  position: relative;
+  margin-top: -4px;
+  transition             : all .3s;
+  border-radius: 50%;
+}
+
+.seacrhi:hover{
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.seacrhi:focus {
+  outline: none;
+}
+
+.seacrhi .circle {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.09);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  animation: ripple 0.5s ease-out;
+}
+
+@keyframes ripple {
+  to {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
+}
+
+
 @media screen and (max-width:1024px) {
   header .menu-area .ani1 {
     height: 0px !important

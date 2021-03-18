@@ -90,7 +90,7 @@
 }
 
 .footer .subscribe p {
-  max-width         : 355px;
+  max-width     : 355px;
   font-size     : 15px;
   line-height   : 1.2;
   letter-spacing: 0.3px;
@@ -98,8 +98,8 @@
 }
 
 .footer .subscribe label {
-  margin-top     : 23px ;
-  width: 100%;
+  margin-top : 23px;
+  width      : 100%;
   font-size  : 17px;
   line-height: 1.18;
   color      : #898989;
@@ -188,8 +188,8 @@
 
 .footer button {
   margin-top      : 20px;
-  padding: 5px 15px;
-  height: 40px;
+  padding         : 5px 15px;
+  height          : 40px;
   border-radius   : 21px;
   text-align      : center;
   transition      : all .3s;
@@ -268,7 +268,7 @@
 
 .footer-section .links-landing a {
   padding        : 3px 15px 0 0;
-  border-radius  : 20px;
+  border-radius: 45px;
   font-size      : 16px;
   text-decoration: none;
   margin         : 10px 15px 10px 0px;
@@ -277,12 +277,13 @@
 .footer-section .links-landing a img {
   margin-right: 10px;
   height      : 43px;
-  margin-top  : -3px;
-  margin-left : -2px;
+  margin-top  : -3.1px;
+  position    : relative;
+  left        : 0;
 }
 
 .footer-section .links-landing .go-to-kinder {
-  border    : 1px solid #7e43ff;
+  border    : 2px solid #7e43ff;
   transition: all .3s;
   color     : #7e43ff;
 }
@@ -293,7 +294,7 @@
 }
 
 .footer-section .links-landing .go-to-school {
-  border    : 1px solid #5571f5;
+  border    : 2px solid #5571f5;
   transition: all .3s;
   color     : #5571f5;
 }
@@ -304,7 +305,7 @@
 }
 
 .footer-section .links-landing .go-to-group {
-  border    : 1px solid #4a6572;
+  border    : 2px solid #4a6572;
   transition: all .3s;
   color     : #4a6572;
 }
@@ -315,7 +316,7 @@
 }
 
 .footer-section .links-landing .go-to-public {
-  border    : 1px solid #0064c6;
+  border    : 2px solid #0064c6;
   transition: all .3s;
   color     : #0064c6;
 }
@@ -453,10 +454,10 @@
   background: transparent;
 }
 
-.close i{
+.close i {
   font-size: 20px;
-  color: #898989;
-  opacity: 0.5;
+  color    : #898989;
+  opacity  : 0.5;
 }
 
 dialog {
@@ -487,6 +488,7 @@ dialog::backdrop {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -496,6 +498,7 @@ dialog::backdrop {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
