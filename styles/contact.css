@@ -8,11 +8,19 @@
 .contact-section .row{
   box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.14);
   border-radius: 15px;
-  padding: 10% 0;
   width: 100%;
-  background-image: url(../assets/images/section-contact/contact.png);
-  background-size: 46%;
+  background-image: url(../assets/images/section-contact/fondo.png);
+  background-size: cover;
   background-repeat: no-repeat;
+  align-items: center;
+}
+
+.contact-section .image{
+  padding: 0;
+}
+
+.contact-section .image img{
+  width: 100%;
 }
 
 .contact-section h5{

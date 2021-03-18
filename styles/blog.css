@@ -14,7 +14,7 @@
 }
 
 .text-blog {
-  padding-left: 20px !important;
+  padding-left: 50px !important;
 }
 
 .text-blog span {
@@ -154,6 +154,9 @@
   .blog-section {
     max-height: calc(865px + 9 * ((100vw - 320px)/ 1224));
     padding: 20px;
+  }
+  .text-blog{
+    padding-left: 20px !important;
   }
 
   .blogger{
