@@ -101,7 +101,7 @@ p {
 }
 
 body::-webkit-scrollbar {
-  width : 13px;
+  width : 10px;
   height: 100px;
 }
 

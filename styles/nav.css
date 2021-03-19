@@ -17,7 +17,13 @@ nav {
 }
 
 nav #menuBtn {
-  display: none;
+  position: absolute;
+  right: 23px;
+  top: 25px;
+  z-index: 9999999;
+  height: 25px;
+  opacity: 0;
+  width: 25px;
 }
 
 .menuBtn img {
@@ -34,7 +40,7 @@ nav .menuBtn {
 }
 
 nav .menuBtn i {
-  background-image : url(../assets/images/icons/menu-icon.png);
+  background-image : url(../assets/images/icons/menu.svg);
   background-repeat: no-repeat;
   /* height        : 200px; */
   background-size  : contain;
@@ -127,7 +133,7 @@ nav ul li a.active {
 }
 
 .seacrhi {
-  background-image   : url(../assets/images/icons/search-icon.png);
+  background-image   : url(../assets/images/icons/search.svg);
   background-repeat  : no-repeat;
   background-color   : transparent;
   background-position-x: 6px;
@@ -216,7 +222,7 @@ nav ul li a.active {
   }
 
   nav .menu-area #menuBtn:checked~label.menuBtn i::before {
-    content : "\f00d";
+    content : url(../assets/images/icons/close.svg);
     z-index : 999;
     color   : #898989;
     position: absolute;
@@ -239,6 +245,10 @@ nav ul li a.active {
   .search {
     justify-content: center;
     display        : flex;
+  }
+
+  .header-ul .seacrhi{
+    margin-top: 25px;
   }
 
 }

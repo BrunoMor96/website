@@ -159,7 +159,7 @@
 
 .see-more-kinder{
   color        : #FF0266;
-  border       : 2px solid #FF0266;
+  border       : 1px solid #FF0266;
 } 
 
 .see-more-kinder:hover{
@@ -168,7 +168,7 @@
 
 .see-more-schools{
   color        : #5974EC;
-  border       : 2px solid #5974EC;
+  border       : 1px solid #5974EC;
 }
 
 .see-more-schools:hover{
@@ -177,7 +177,7 @@
 
 .see-more-group{
   color        : #4A6572;
-  border       : 2px solid #4A6572;
+  border       : 1px solid #4A6572;
 }
 
 .see-more-group:hover{
@@ -186,7 +186,7 @@
 
 .see-more-public{
   color        : #0064c6;
-  border       : 2px solid #0064c6;
+  border       : 1px solid #0064c6;
 }
 
 .see-more-public:hover{

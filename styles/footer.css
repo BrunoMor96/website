@@ -59,7 +59,7 @@
 }
 
 .footer-down .languaje {
-  margin-left: -100px;
+  margin-left: -70px;
 }
 
 .footer-down .languaje .espanol {
@@ -73,7 +73,7 @@
 .footer-down .languaje .separador {
   width : 0;
   height: 21px;
-  border: solid 1px #767676;
+  border-right: solid 1px #767676;
 }
 
 .footer-down .languaje .ingles {
@@ -83,7 +83,29 @@
   color      : #767676;
 }
 
-.footer-down .socials {}
+.footer-down .socials {
+  width: 135px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-down .socials a{
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding-top: 2px;
+  transition      : all .3s;
+  border-radius: 50%;
+}
+
+.footer-down .socials a img{
+  border-radius: 50%;
+}
+
+.footer-down .socials a:hover img{
+  background-color: white;
+}
 
 .footer .subscribe img {
   margin-bottom: 30px;
@@ -283,7 +305,7 @@
 }
 
 .footer-section .links-landing .go-to-kinder {
-  border    : 2px solid #7e43ff;
+  border    : 1px solid #7e43ff;
   transition: all .3s;
   color     : #7e43ff;
 }
@@ -294,7 +316,7 @@
 }
 
 .footer-section .links-landing .go-to-school {
-  border    : 2px solid #5571f5;
+  border    : 1px solid #5571f5;
   transition: all .3s;
   color     : #5571f5;
 }
@@ -305,7 +327,7 @@
 }
 
 .footer-section .links-landing .go-to-group {
-  border    : 2px solid #4a6572;
+  border    : 1px solid #4a6572;
   transition: all .3s;
   color     : #4a6572;
 }
@@ -316,7 +338,7 @@
 }
 
 .footer-section .links-landing .go-to-public {
-  border    : 2px solid #0064c6;
+  border    : 1px solid #0064c6;
   transition: all .3s;
   color     : #0064c6;
 }
@@ -563,6 +585,16 @@ dialog::backdrop {
 
   .links-landing .icons-footer .group-icons {
     display: block;
+  }
+
+  .group-icons .social-l{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+
+  .footer-down .socials{
+    display: none !important;
   }
 
   .footer-down .copy,

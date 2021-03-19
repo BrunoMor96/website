@@ -89,7 +89,7 @@
   -webkit-transform: rotate(-180deg);
   transform: rotate(-180deg);
   padding-bottom: 5px;
-  background-image: url(../assets/images/icons/arroz-up.png);
+  background-image: url(../assets/images/icons/arrow.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
