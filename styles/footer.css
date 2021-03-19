@@ -593,6 +593,11 @@ dialog::backdrop {
     margin-top: 50px;
   }
 
+  .group-icons .social-l a{
+    padding: 0;
+    margin: 0;
+  }
+
   .footer-down .socials{
     display: none !important;
   }
