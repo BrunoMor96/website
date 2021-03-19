@@ -20,7 +20,7 @@ nav #menuBtn {
   display: none;
 }
 
-.menuBtn img{
+.menuBtn img {
   width: 25px;
 }
 
@@ -33,11 +33,11 @@ nav .menuBtn {
   top      : 24px;
 }
 
-nav .menuBtn i{
-  background-image: url(../assets/images/icons/menu-icon.png);
-    background-repeat: no-repeat;
-    /* height: 200px; */
-    background-size: contain;
+nav .menuBtn i {
+  background-image : url(../assets/images/icons/menu-icon.png);
+  background-repeat: no-repeat;
+  /* height        : 200px; */
+  background-size  : contain;
 }
 
 nav .logo {
@@ -46,15 +46,15 @@ nav .logo {
 }
 
 nav ul {
-  float: right;
-  display: flex;
+  float      : right;
+  display    : flex;
   align-items: center;
 }
 
 .header-ul {
   margin-bottom: 0;
   z-index      : 99999999;
-  margin-top: -40px;
+  margin-top   : -40px;
 }
 
 nav ul li {
@@ -64,7 +64,8 @@ nav ul li {
   margin     : 0 .2rem;
 }
 
-nav ul li a, nav ul lo a {
+nav ul li a,
+nav ul lo a {
   color          : #747474;
   font-size      : 16px;
   text-decoration: none;
@@ -125,11 +126,29 @@ nav ul li a.active {
   width: 34px;
 }
 
+.seacrhi {
+  background-image   : url(../assets/images/icons/search-icon.png);
+  background-repeat  : no-repeat;
+  background-color   : transparent;
+  background-position-x: 6px;
+  background-position-y: 6px;
+  border             : none;
+  padding            : 20px 20px;
+  position           : relative;
+  margin-top         : -4px;
+  transition         : all .3s;
+  border-radius      : 50%;
+}
+
+.seacrhi:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
 @media screen and (max-width:1024px) {
 
   nav {
     height: calc(70px + 9 * ((100vw - 320px)/ 1224));
-    top: -1px;
+    top   : -1px;
   }
 
   .header-ul {
@@ -169,17 +188,17 @@ nav ul li a.active {
     line-height: 4rem;
   }
 
-  nav ul .ventas a:hover{
+  nav ul .ventas a:hover {
     background: black !important;
   }
 
   nav ul li a {
     display  : block;
     font-size: 24px;
-    height: 48px;
+    height   : 48px;
   }
 
-  .espacio{
+  .espacio {
     height: 0;
   }
 
@@ -193,7 +212,7 @@ nav ul li a.active {
 
   nav .menu-area #menuBtn:checked~ul {
     left: 0;
-    top: 0;
+    top : 0;
   }
 
   nav .menu-area #menuBtn:checked~label.menuBtn i::before {
@@ -203,22 +222,23 @@ nav ul li a.active {
     position: absolute;
     top     : 0;
     right   : 5px;
-    opacity: 0.5;
+    opacity : 0.5;
   }
 
-  .begin-smiledu, .sales-smiledu{
+  .begin-smiledu,
+  .sales-smiledu {
     max-width: none;
-    padding: 15px 25px;
-    display: inline;
+    padding  : 15px 25px;
+    display  : inline;
   }
 
-  nav .header-ul lo a img{
+  nav .header-ul lo a img {
     width: 25%;
   }
 
-  .search{
+  .search {
     justify-content: center;
-    display: flex;
+    display        : flex;
   }
 
 }

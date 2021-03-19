@@ -16,7 +16,6 @@ $(".mat-input").focusout(function(){
 const ani1 = document.querySelector('header .menu-area .ani1');
 const ani2 = document.querySelectorAll('header .menu-area ul li');
 
-console.log(ani2);
 ani2.forEach((list) => {
 list.addEventListener('click', () => {
     let position = list.getBoundingClientRect();
@@ -158,25 +157,5 @@ $(document).ready(function(){
   });
   $('#close-modal').on('click', function() {
       $body.removeClass('block-scroll');
-  });
-});
-
-//Buttons ripple
-const buttons = document.querySelectorAll(".ripple");
-
-buttons.forEach((button) => {
-  button.addEventListener("click", function (e) {
-    const x = e.clientX;
-    const y = e.clientY;
-    const buttonTop = e.target.offsetTop;
-    const buttonLeft = e.target.offsetLeft;
-    const xInside = x - buttonLeft;
-    const yInside = y - buttonTop;
-    const circle = document.createElement("span");
-    circle.classList.add("circle");
-    circle.style.top = yInside + "px";
-    circle.style.left = xInside + "px";
-    this.appendChild(circle);
-    setTimeout(() => circle.remove(), 500);
   });
 });

@@ -1,16 +1,16 @@
 .contact-section{
   display: flex;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 150px;
   justify-content: center;
 }
 
 .contact-section .row{
   box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.14);
-  border-radius: 15px;
+  border-radius: 20px;
   width: 100%;
   background-image: url(../assets/images/section-contact/fondo.png);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   align-items: center;
 }
@@ -20,7 +20,8 @@
 }
 
 .contact-section .image img{
-  width: 100%;
+  width: 120%;
+  margin-top: -180px;
 }
 
 .contact-section h5{
