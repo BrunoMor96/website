@@ -1,3 +1,7 @@
+$(window).load(function() {
+  $(".loader").fadeOut("slow");
+});
+
 // scrollAnimation
 AOS.init();
 
