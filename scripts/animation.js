@@ -5,17 +5,6 @@ $(window).load(function() {
 // scrollAnimation
 AOS.init();
 
-// AniamtionModalInput
-$(".mat-input").focus(function(){
-  $(this).parent().addClass("is-active is-completed");
-});
-
-$(".mat-input").focusout(function(){
-  if($(this).val() === "")
-    $(this).parent().removeClass("is-completed");
-  $(this).parent().removeClass("is-active");
-})
-
 // NavAnimation
 const ani1 = document.querySelector('header .menu-area .ani1');
 const ani2 = document.querySelectorAll('header .menu-area ul li');
@@ -78,12 +67,6 @@ $(document).ready(function() {
 		return false;
 	});
 });
-// $(document).ready(function() {
-// 	$('#volverabajo').click(function(){ 
-// 		$('html, body').animate({scrollBottom:0}, 'slow');
-// 		return false;
-// 	});
-// });
 
 // AnimacionInfinitia
 var $holder = $(".holder");
@@ -141,18 +124,6 @@ $holder2.on("mouseenter", function(){
 	infinite2.play();
 });
 
-// //modal
-// const openModal = document.querySelector('.open-modal');
-// const closeModal = document.querySelector('.close-modal');
-// const apply = document.querySelector('.apply');
-// const dialog = document.querySelector('dialog');
-// const input = document.querySelector('input');
-// const output = document.querySelector('output');
-
-// openModal.addEventListener('click', () => {
-//   dialog.showModal();
-// });
-
 //Activar desactivar scroll
 $(document).ready(function(){
   var $body = $('html,body');
@@ -163,3 +134,14 @@ $(document).ready(function(){
       $body.removeClass('block-scroll');
   });
 });
+
+// AniamtionModalFormInput
+$(".mat-input").focus(function(){
+  $(this).parent().addClass("is-active is-completed");
+});
+
+$(".mat-input").focusout(function(){
+  if($(this).val() === "")
+    $(this).parent().removeClass("is-completed");
+  $(this).parent().removeClass("is-active");
+})

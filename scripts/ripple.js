@@ -75,3 +75,4 @@ document.querySelector('.ripple-button5').addEventListener('mousedown', ripple);
 document.querySelector('.ripple-button6').addEventListener('mousedown', ripple);
 document.querySelector('.ripple-prev').addEventListener('mousedown', ripple);
 document.querySelector('.ripple-next').addEventListener('mousedown', ripple);
+document.querySelector('.ripple-close').addEventListener('mousedown', ripple);

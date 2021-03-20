@@ -18,12 +18,12 @@ nav {
 
 nav #menuBtn {
   position: absolute;
-  right: 23px;
-  top: 25px;
-  z-index: 9999999;
-  height: 25px;
-  opacity: 0;
-  width: 25px;
+  right   : 23px;
+  top     : 25px;
+  z-index : 9999999;
+  height  : 25px;
+  opacity : 0;
+  width   : 25px;
 }
 
 .menuBtn img {
@@ -36,7 +36,7 @@ nav .menuBtn {
   position : absolute;
   display  : none;
   right    : 25px;
-  top      : 24px;
+  top      : 20px;
 }
 
 nav .menuBtn i {
@@ -48,7 +48,7 @@ nav .menuBtn i {
 
 nav .logo {
   height    : 35px;
-  margin-top: 5px;
+  margin-top: 2px;
 }
 
 nav ul {
@@ -60,7 +60,7 @@ nav ul {
 .header-ul {
   margin-bottom: 0;
   z-index      : 99999999;
-  margin-top   : -40px;
+  margin-top   : -37px;
 }
 
 nav ul li {
@@ -136,8 +136,7 @@ nav ul li a.active {
   background-image   : url(../assets/images/icons/search.svg);
   background-repeat  : no-repeat;
   background-color   : transparent;
-  background-position-x: 6px;
-  background-position-y: 6px;
+  background-position: center;
   border             : none;
   padding            : 20px 20px;
   position           : relative;
@@ -247,7 +246,7 @@ nav ul li a.active {
     display        : flex;
   }
 
-  .header-ul .seacrhi{
+  .header-ul .seacrhi {
     margin-top: 25px;
   }
 
