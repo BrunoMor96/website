@@ -141,17 +141,17 @@ $holder2.on("mouseenter", function(){
 	infinite2.play();
 });
 
-//modal
-const openModal = document.querySelector('.open-modal');
-const closeModal = document.querySelector('.close-modal');
-const apply = document.querySelector('.apply');
-const dialog = document.querySelector('dialog');
-const input = document.querySelector('input');
-const output = document.querySelector('output');
+// //modal
+// const openModal = document.querySelector('.open-modal');
+// const closeModal = document.querySelector('.close-modal');
+// const apply = document.querySelector('.apply');
+// const dialog = document.querySelector('dialog');
+// const input = document.querySelector('input');
+// const output = document.querySelector('output');
 
-openModal.addEventListener('click', () => {
-  dialog.showModal();
-});
+// openModal.addEventListener('click', () => {
+//   dialog.showModal();
+// });
 
 //Activar desactivar scroll
 $(document).ready(function(){
