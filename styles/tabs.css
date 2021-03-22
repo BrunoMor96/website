@@ -113,6 +113,10 @@ md-tabs .md-tab.md-active{
   margin-top: -4px;
 }
 
+.content-tabs .img-academica img {
+  width: 100%;
+}
+
 .border-f{
   width: 100%;
   display: flex;
