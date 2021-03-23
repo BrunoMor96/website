@@ -3,10 +3,14 @@
 }
 
 .banner-section .banner {
-  padding: 0 5%;
-  height: 100%;
-  display: flex;
+  padding    : 0 5%;
+  height     : 100%;
+  display    : flex;
   align-items: center;
+}
+
+.banner .content-text-banner {
+  margin-top: -60px;
 }
 
 .title-banner .h1-banner {
@@ -14,6 +18,7 @@
   line-height: 1;
   color      : #606060;
   font-size  : calc(55px + 9 * ((100vw - 320px)/ 1224));
+  width: calc(550px + 9 * ((100vw - 320px)/ 1224));
 }
 
 .title-banner p {
@@ -21,6 +26,7 @@
   margin-top : 30px !important;
   color      : #8a8a8a;
   line-height: 1.21;
+  width: calc(500px + 9 * ((100vw - 320px)/ 1224));
 }
 
 .grid-video {
@@ -30,7 +36,7 @@
 
 .grid-video .try-it {
   cursor    : url(../assets/images/icons/cursor_arrow2.png), pointer;
-  margin-top: -65px;
+  margin-top: 85px;
 }
 
 .grid-video .try-it {
@@ -86,7 +92,7 @@
 
 .video-banner a {
   color     : transparent !important;
-  margin-top: -15px;
+  margin-top: -70px;
 }
 
 .video-banner .see-video {
@@ -118,52 +124,57 @@
   display        : flex;
   justify-content: flex-start;
   width          : 310px;
+  margin-top     : -55px;
 }
 
 .content-banner .proms a img {
   margin-right: 30px;
   margin-top  : 35px;
   width       : auto;
-  height      : 25px;
+  height      : 22px;
 }
 
-.banner .content-img-banner img{
-  width: 100%;
+.banner .content-img-banner img {
+  width   : 120%;
   position: relative;
-  right: -20%;
-  top: 10%;
+  right   : -10%;
+  top     : 10%;
 }
 
-.image-movil{
+.image-movil {
   display: none;
 }
 
 @media only screen and (max-width: 767px) {
 
-  .image-desktop{
+  .image-desktop {
     display: none;
   }
 
-  .image-movil{
+  .image-movil {
     display: block;
   }
 
-  .image-movil{
-    background-image: url(../assets/images/section-banner/banner2.png);
-    height: 350px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  
-  .image-movil button{
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: none;
+  .banner .content-text-banner {
+    margin-top: 50px;
   }
 
-  .image-movil button img{
+  .image-movil {
+    background-image   : url(../assets/images/section-banner/banner2.png);
+    height             : 350px;
+    background-position: center;
+    background-size    : contain;
+    background-repeat  : no-repeat;
+  }
+
+  .image-movil button {
+    width     : 100%;
+    height    : 100%;
+    background: transparent;
+    border    : none;
+  }
+
+  .image-movil button img {
     width: 100px;
   }
 
@@ -191,13 +202,26 @@
   .content-banner .proms a img {
     height: 18px;
   }
-  .image-movil{
+
+  .image-movil {
     height: 300px;
   }
 }
 
 
 @media only screen and (max-width: 1024px) {
+
+  .title-banner .h1-banner {
+    width: auto;
+  }
+  
+  .title-banner p {
+    width: auto;
+  }
+
+  .content-banner .proms {
+    margin-top: 0;
+  }
 
   .banner-section .banner {
     background-image: none;

@@ -1,4 +1,4 @@
-$(window).load(function() {
+$(window).load(function () {
   $(".loader").fadeOut("slow");
 });
 
@@ -10,21 +10,21 @@ const ani1 = document.querySelector('header .menu-area .ani1');
 const ani2 = document.querySelectorAll('header .menu-area ul li');
 
 ani2.forEach((list) => {
-list.addEventListener('click', () => {
+  list.addEventListener('click', () => {
     let position = list.getBoundingClientRect();
     ani1.classList.add('active');
     ani1.style.left = position.x + 'px';
     ani1.style.top = position.y + 'px';
     ani1.style.height = position.height + 'px';
     ani1.style.width = position.width + 'px';
-});
+  });
 });
 
 let buttons2 = document.querySelectorAll(".header-ul li a");
 
-buttons2.forEach(button =>{
-  button.addEventListener("click",_ =>{
-    buttons2.forEach(button =>{
+buttons2.forEach(button => {
+  button.addEventListener("click", _ => {
+    buttons2.forEach(button => {
       button.classList.remove("background");
     })
     button.classList.toggle("background");
@@ -42,30 +42,32 @@ $(window).scroll(function () {
 
 
 // HoverAnimation
-$(function () { 
+$(function () {
   $('#content').hover(function () {
-     $('#text').css('opacity', '1'); 
+    $('#text').css('opacity', '1');
   }, function () {
-     $('#text').css('opacity', '0'); 
-}); });
+    $('#text').css('opacity', '0');
+  });
+});
 
-$(function () { 
+$(function () {
   $('#content3').hover(function () {
-     $('#text3').css('opacity', '1'); 
+    $('#text3').css('opacity', '1');
   }, function () {
-     $('#text3').css('opacity', '0'); 
-}); });
+    $('#text3').css('opacity', '0');
+  });
+});
 
 // ScrollTop
-$(document).ready(function() {
-	$('#volver-arriba').click(function(){ 
-		$('html, body').animate({scrollTop:0}, 'slow');
-		return false;
-	});
-  $('#logo').click(function(){ 
-		$('html, body').animate({scrollTop:0}, 'slow');
-		return false;
-	});
+$(document).ready(function () {
+  $('#volver-arriba').click(function () {
+    $('html, body').animate({ scrollTop: 0 }, 'slow');
+    return false;
+  });
+  $('#logo').click(function () {
+    $('html, body').animate({ scrollTop: 0 }, 'slow');
+    return false;
+  });
 });
 
 // AnimacionInfinitia
@@ -84,64 +86,83 @@ var listWidth2 = $list2.find("button").length * 230;
 var endPos2 = $holder2.width() - listWidth2;
 
 $list.add($clonedList).css({
-	"width" : listWidth + "px"
+  "width": listWidth + "px"
 });
 
 $list2.add($clonedList2).css({
-	"width" : listWidth2 + "px"
+  "width": listWidth2 + "px"
 });
 
 $clonedList.addClass("cloned").appendTo($holder);
 $clonedList2.addClass("cloned2").appendTo($holder2);
 
 //TimelineMax
-var infinite = new TimelineMax({repeat: -1, paused: false});
+var infinite = new TimelineMax({ repeat: -1, paused: false });
 var time = 70;
-var infinite2 = new TimelineMax({repeat: -1, paused: false});
+var infinite2 = new TimelineMax({ repeat: -1, paused: false });
 
-infinite.fromTo($list, time, {left:0}, {left: listWidth, ease: Linear.easeNone}, 0);
-infinite.fromTo($clonedList, time, {left:-listWidth}, {left:0, ease: Linear.easeNone}, 0);
-infinite.set($list, {left: -listWidth});
-infinite.to($clonedList, time, {left: listWidth, ease: Linear.easeNone}, time);
-infinite.to($list, time, {left: 0, ease: Linear.easeNone}, time);
+infinite.fromTo($list, time, { left: 0 }, { left: listWidth, ease: Linear.easeNone }, 0);
+infinite.fromTo($clonedList, time, { left: -listWidth }, { left: 0, ease: Linear.easeNone }, 0);
+infinite.set($list, { left: -listWidth });
+infinite.to($clonedList, time, { left: listWidth, ease: Linear.easeNone }, time);
+infinite.to($list, time, { left: 0, ease: Linear.easeNone }, time);
 
-infinite2.fromTo($list2, time, {left:0}, {left: -listWidth2, ease: Linear.easeNone}, 0);
-infinite2.fromTo($clonedList2, time, {left: listWidth2}, {left:0, ease: Linear.easeNone}, 0);
-infinite2.set($list2, {left: listWidth2});
-infinite2.to($clonedList2, time, {left: -listWidth2, ease: Linear.easeNone}, time);
-infinite2.to($list2, time, {left: 0, ease: Linear.easeNone}, time);
+infinite2.fromTo($list2, time, { left: 0 }, { left: -listWidth2, ease: Linear.easeNone }, 0);
+infinite2.fromTo($clonedList2, time, { left: listWidth2 }, { left: 0, ease: Linear.easeNone }, 0);
+infinite2.set($list2, { left: listWidth2 });
+infinite2.to($clonedList2, time, { left: -listWidth2, ease: Linear.easeNone }, time);
+infinite2.to($list2, time, { left: 0, ease: Linear.easeNone }, time);
 
 //Pause/Play
-$holder.on("mouseenter", function(){
-	infinite.pause();
-}).on("mouseleave", function(){
-	infinite.play();
+$holder.on("mouseenter", function () {
+  infinite.pause();
+}).on("mouseleave", function () {
+  infinite.play();
 });
 
-$holder2.on("mouseenter", function(){
-	infinite2.pause();
-}).on("mouseleave", function(){
-	infinite2.play();
+$holder2.on("mouseenter", function () {
+  infinite2.pause();
+}).on("mouseleave", function () {
+  infinite2.play();
 });
 
 //Activar desactivar scroll
-$(document).ready(function(){
+$(document).ready(function () {
   var $body = $('html,body');
-  $('#subs').on('click', function() {
-      $body.addClass('block-scroll');
+
+  //Form-Videos-Block-Scroll
+  $('#subs').on('click', function () {
+    $body.addClass('block-scroll');
   });
-  $('#close-modal').on('click', function() {
-      $body.removeClass('block-scroll');
+  $('#close-modal').on('click', function () {
+    $body.removeClass('block-scroll');
   });
+
+  //Modal-Videos-Block-Scroll
+  $('#youtube').on('click', function () {
+    $body.addClass('block-scroll');
+  });
+  $('#close-youtube').on('click', function () {
+    $body.removeClass('block-scroll');
+  });
+
+  //Modal-Videos-Block-Scroll-Movil
+  $('#video-movil').on('click', function () {
+    $body.addClass('block-scroll');
+  });
+  $('#close-movil').on('click', function () {
+    $body.removeClass('block-scroll');
+  });
+
 });
 
 // AniamtionModalFormInput
-$(".mat-input").focus(function(){
+$(".mat-input").focus(function () {
   $(this).parent().addClass("is-active is-completed");
 });
 
-$(".mat-input").focusout(function(){
-  if($(this).val() === "")
+$(".mat-input").focusout(function () {
+  if ($(this).val() === "")
     $(this).parent().removeClass("is-completed");
   $(this).parent().removeClass("is-active");
 })

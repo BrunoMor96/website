@@ -9,7 +9,7 @@
   border-radius: 50%;
 }
 
-.modal-btn:hover {
+.modal-btn:hover, .close-youtube:hover {
   background: rgba(0, 0, 0, 0.03);
 }
 
@@ -175,4 +175,80 @@
 .is-completed .mat-label {
   font-size: 12px;
   transform: translateY(0);
+}
+
+
+/* Youtube Video  */
+
+.modal-btn {
+  border       : none;
+  padding      : 15px;
+  font-size    : 12px;
+  outline      : none;
+  background   : transparent;
+  margin-top   : -40px;
+  margin-left  : 96.5%;
+  border-radius: 50%;
+}
+
+.modal-btn:hover {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.modal-btn img {
+  width: 12px;
+}
+
+.modal-video-one, .modal-video-movile{
+  position        : fixed;
+  top             : 0;
+  left            : 0;
+  background-color: rgba(255, 255, 255, .95);
+  height          : 100%;
+  width           : 100%;
+  display         : flex;
+  align-items     : center;
+  justify-content : center;
+  z-index         : 99999;
+  opacity         : 0;
+  pointer-events  : none;
+  transition      : all 0.2s ease-in-out;
+}
+
+.video-one {
+  border       : none;
+  padding      : 20px;
+  border-radius: 5px;
+  box-shadow   : 0 11px 15px -7px rgb(0 0 0 / 20%), 0 24px 38px 3px rgb(0 0 0 / 14%), 0 9px 46px 8px rgb(0 0 0 / 12%);
+  margin       : auto;
+  background   : white;
+}
+
+.video-one iframe{
+  max-width: 80vw;
+  min-width: 60vw;
+  min-height: 70vh;
+  max-height: 80vh;
+}
+
+.ocultar-youtube{
+  display: none;
+}
+
+.show-video, .show-video-movile {
+  opacity       : 1;
+  pointer-events: auto;
+}
+
+.close-youtube {
+  border       : none;
+  padding      : 15px;
+  font-size    : 12px;
+  outline      : none;
+  background   : transparent;
+  position: absolute;
+  left: 80%;
+  border-radius: 50%;
+  margin-top: -50px;
+  margin-left: 15px;
 }

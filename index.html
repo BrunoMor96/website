@@ -99,7 +99,8 @@
     <div class="container-fluid banner">
       <div class="row">
 
-        <div data-aos="fade-right" style="margin-top: 5%;" data-aos-delay="0" data-aos-duration="800" class="col-md-6">
+        <div data-aos="fade-right" style="display: flex;align-items: center" data-aos-delay="0" data-aos-duration="800"
+          class="col-md-6 content-text-banner">
           <div class="content-banner">
             <div class="title-banner">
               <h1 class="h1-banner">Tu colegio o kinder en un solo espacio.</h1>
@@ -108,7 +109,7 @@
             </div>
             <div class="grid-video">
               <div class="video-banner">
-                <button class="see-video" href="#">
+                <button id="youtube" class="see-video open-youtube-banner youtube-one">
                   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 154.121 154.121">
                     <g transform="translate(-13324.977 15505.237)">
                       <g transform="translate(13324.977 -15505.237)">
@@ -145,12 +146,13 @@
           </div>
         </div>
 
-        <div data-aos="fade-left" data-aos-delay="0" data-aos-duration="800" class="col-md-6 content-img-banner image-desktop">
-            <img src="./assets/images/section-banner/bannerhandpng.png" alt="">
+        <div data-aos="fade-left" data-aos-delay="0" data-aos-duration="800"
+          class="col-md-6 content-img-banner image-desktop">
+          <img src="./assets/images/section-banner/bannerhandpng.png" alt="">
         </div>
 
         <div data-aos="fade-left" data-aos-delay="0" data-aos-duration="800" class="col-md-6 image-movil">
-          <button>
+          <button id="video-movil" class="youtube-movile">
             <img src="./assets/images/icons/play.svg" alt="">
           </button>
         </div>
@@ -201,7 +203,7 @@
         <div id="swiper-kinder" data-aos="fade-right" data-aos-duration="800" class="swiper-slide">
 
           <div id="text" class="inicial-png">
-            <img id="text-kinder" src="./assets/images/section-landing/text-inicial.png" alt="">
+            <img id="text-kinder" src="./assets/images/section-landing/kiner-scripts.png" alt="">
           </div>
 
           <div id="content" class="info-landing swiper-kinder">
@@ -227,7 +229,7 @@
         <div data-aos="fade-right" data-aos-duration="800" class="swiper-slide">
 
           <div class="inicial-png display-none">
-            <img src="./assets/images/section-landing/text-inicial.png" alt="">
+            <img src="./assets/images/section-landing/schools-scripts.png" alt="">
           </div>
 
           <div id="content" class="info-landing info-landing-responsive">
@@ -287,7 +289,7 @@
         <div data-aos="fade-left" data-aos-duration="800" class="swiper-slide">
 
           <div class="inicial-png display-none">
-            <img src="./assets/images/section-landing/text-inicial.png" alt="">
+            <img src="./assets/images/section-landing/public-scripts.png" alt="">
           </div>
 
           <div id="content2" class="info-landing info-landing-responsive">
@@ -737,7 +739,7 @@
           </div>
 
           <div class="col-sm-12">
-            <img class="person" src="./assets/images/section-user/user-1.png" alt="">
+            <img class="person" src="./assets/images/section-testimonios/profe-kinder.png" alt="">
             <div class="personaje-movile">
               <div class="text-personaje-movile">
                 <p>"Una experiencia muy satisfactoria, con una plataforma que
@@ -770,7 +772,7 @@
           </div>
 
           <div class="col-sm-12">
-            <img class="person" src="./assets/images/section-user/user-1.png" alt="">
+            <img class="person" src="./assets/images/section-testimonios/profe-school.png" alt="">
             <div class="personaje-movile">
               <div class="text-personaje-movile">
                 <p>"Estamos cambiando y Smiledu nos ha brindado lo mejor de su talento humano y
@@ -802,7 +804,7 @@
           </div>
 
           <div class="col-sm-12">
-            <img class="person" src="./assets/images/section-user/user-1.png" alt="">
+            <img class="person" src="./assets/images/section-testimonios/profe-group.png" alt="">
             <div class="personaje-movile">
               <div class="text-personaje-movile">
                 <p>"Antes nuestros colegios tenían que adecuarse a diversas plataformas,
@@ -822,8 +824,6 @@
 
           </div>
 
-
-
         </div>
 
         <div class="swiper-slide slide-swipper">
@@ -837,7 +837,7 @@
           </div>
 
           <div class="col-sm-12">
-            <img class="person" src="./assets/images/section-user/user-1.png" alt="">
+            <img class="person" src="./assets/images/section-testimonios/profe-public.png" alt="">
             <div class="personaje-movile">
               <div class="text-personaje-movile">
                 <p>"Antes nuestros colegios tenían que adecuarse a diversas plataformas,
@@ -1362,7 +1362,7 @@
     </div>
   </footer>
 
-  <!-- Begin Modal -->
+  <!-- Begin Form Subs Modal -->
   <section class="modal-container">
     <div class="modal-one">
       <div id="mc_embed_signup">
@@ -1411,7 +1411,32 @@
       </div>
     </div>
   </section>
-  <!-- End Modal -->
+  <!-- End Form Subs Modal -->
+
+  <!-- Begin Video Youtube Banner  -->
+
+  <section class="modal-video-one modal-video-movile">
+
+    <div class="container-youtube">
+
+      <button id="close-youtube" class="close-youtube">
+        <img src="./assets/images/icons/close.svg" alt="">
+      </button>
+
+      <div class="video-one videos-youtube">
+
+        <iframe src="https://www.youtube-nocookie.com/embed/w2mEpOvZ1UE" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- End Video Youtube Banner  -->
 
   <div style="display: flex; justify-content: center">
     <button id="volver-arriba" class="to-up">

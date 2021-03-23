@@ -17,6 +17,7 @@
 
 .landing-section .swiper-wrapper {
   padding: 70px 0;
+  padding-bottom: 0;
 }
 
 .inicial-png, .prin-sec-png, .esta-png, .group-png {
@@ -32,9 +33,10 @@
 
 
 .inicial-png img {
-  width: 145px;
-  height: 105px;
+  width: 130px;
+  height: 76px;
   margin-left: 150px;
+  margin-bottom: 30px;
 }
 
 .group-png img{
