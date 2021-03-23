@@ -207,7 +207,7 @@
 
   .hover-text p {
     width         : 204.6px;
-    height        : 90px;
+    height        : auto;
     font-size     : 18px;
     opacity       : 0.9;
     font-weight   : normal;

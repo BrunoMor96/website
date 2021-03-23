@@ -2,7 +2,7 @@
   height             : 220px;
   margin-bottom      : 40px;
   background-image   : url(../assets/images/section-contador/fondo.png);
-  background-size    : cover;
+  background-size    : contain;
   background-position: center;
   margin-top         : -20px;
 }
@@ -79,6 +79,10 @@
     height    : 1.5px;
     background: #e1e1e1;
     margin    : 0 20px;
+  }
+
+  .contador-section {
+    background-size: cover;
   }
 
 }

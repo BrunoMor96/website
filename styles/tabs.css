@@ -5,6 +5,10 @@
   margin-bottom: 40px;
 }
 
+.tabs-section .row {
+  align-items: center;
+}
+
 .tabsdemoDynamicHeight {
   background-image     : url(../assets/images/section-tabs/bg-header.png);
   background-size      : contain;
@@ -142,6 +146,17 @@ md-tabs .md-tab.md-active {
   width: 22px;
 }
 
+@media only screen and (max-width: 1024px) {
+
+  .content-academica h3,
+  .content-academica p,
+  .content-academica ul li {
+    width : auto !important;
+    height: auto !important;
+  }
+
+}
+
 @media only screen and (max-width: 650px) {
 
   md-pagination-wrapper md-tab-item {
@@ -217,6 +232,12 @@ md-tabs .md-tab.md-active {
 
   .img-academica {
     display: none;
+  }
+
+  .content-academica h3,
+  .content-academica p,
+  .content-academica ul li {
+    width: 409px !important;
   }
 
 }

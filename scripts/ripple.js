@@ -72,6 +72,6 @@ document.querySelector('.ripple-button2').addEventListener('mousedown', ripple);
 document.querySelector('.ripple-button3').addEventListener('mousedown', ripple);
 document.querySelector('.ripple-button4').addEventListener('mousedown', ripple);
 document.querySelector('.ripple-button5').addEventListener('mousedown', ripple);
-document.querySelector('.ripple-button6').addEventListener('mousedown', ripple);
+// document.querySelector('.ripple-button6').addEventListener('mousedown', ripple);
 document.querySelector('.ripple-prev').addEventListener('mousedown', ripple);
 document.querySelector('.ripple-next').addEventListener('mousedown', ripple);

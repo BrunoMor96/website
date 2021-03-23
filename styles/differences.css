@@ -116,6 +116,10 @@
     background-image: none;
   }
 
+  .swiper3 .swiper-slide .images-banks img {
+    margin-right: 15px;
+  }
+
   .differences-section .swiper-wrapper {
     margin-bottom: 40px;
   }
