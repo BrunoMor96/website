@@ -1,107 +1,116 @@
-.faq-section h1{
-  text-align: center;
-  margin-top: 70px;
-  color: #606060;
+.faq-section h1 {
+  text-align   : center;
+  margin-top   : 70px;
+  color        : #606060;
   margin-bottom: 25px;
 }
 
 .faq-section .row>* {
-  padding: 0 !important;
+  padding   : 0 !important;
   margin-top: 40px;
 }
 
 .accordion {
   border-radius: 15px;
-  box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.14);
-}
-.accordion__tabs {
-  list-style: none;
-  padding: 0;
-}
-.accordion__tab {
-  width: 100%;
-  border-bottom: 1px solid #e8e4e4;
-}
-.accordion__tab:last-child {
-  width: 100%;
-  border-bottom: none;
-}
-.accordion__tab__headline {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: 0.2s ease all;
-  padding: 15px;
-  font-weight: 400;
+  box-shadow   : 0 3px 30px 0 rgba(0, 0, 0, 0.14);
 }
 
-.accordion__tab__headline > h4 {
-  font-size: 20px;
-  text-align: left;
-  color: #606060;
-  padding: 15px;
+.accordion__tabs {
+  list-style: none;
+  padding   : 0;
+}
+
+.accordion__tab {
+  width        : 100%;
+  border-bottom: 1px solid #e8e4e4;
+}
+
+.accordion__tab:last-child {
+  width        : 100%;
+  border-bottom: none;
+}
+
+.accordion__tab__headline {
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+  transition     : 0.2s ease all;
+  padding        : 15px;
+  font-weight    : 400;
+}
+
+.accordion__tab__headline>h4 {
+  font-size    : 20px;
+  text-align   : left;
+  color        : #606060;
+  padding      : 15px;
   margin-bottom: 0;
 }
+
 .accordion__tab__headline .icon {
-  display: inline-block;
-  width: 22px;
-  height: 22px;
+  display : inline-block;
+  width   : 22px;
+  height  : 22px;
   position: relative;
 }
 
-.accordion__tab__headline button{
-  outline: none;
-  border: none;
-  background: transparent;
+.accordion__tab__headline button {
+  outline      : none;
+  border       : none;
+  background   : transparent;
   border-radius: 50px;
-  width: 45px;
-  height: 45px;
-  transition: 0.4s ease all;
+  width        : 45px;
+  height       : 45px;
+  transition   : 0.4s ease all;
 }
 
-.accordion__tab__headline button:hover{
+.accordion__tab__headline button:hover {
   background-color: rgba(0, 0, 0, 0.03);
 }
 
 .accordion__tab__content {
-  overflow: hidden;
-  padding: 0px 15px;
+  overflow  : hidden;
+  padding   : 0px 15px;
   box-sizing: border-box;
-  height: 100%;
+  height    : 100%;
   max-height: 0;
   transition: 0.4s ease all;
 }
 
-.icon{
+.icon {
   margin-right: 15px;
 }
 
-.accordion-parraf{
-  font-size: 16px;
+.accordion-parraf {
+  font-size  : 16px;
   line-height: 1.32;
-  color: #606060;
-  padding: 0 15px 40px 15px;
+  color      : #606060;
+  padding    : 0 15px 40px 15px;
 }
 
-.accordion__tab .accordion__tab__headline .icon_check{
-  -moz-transform: rotate(-180deg);
-  -o-transform: rotate(-180deg);
-  -webkit-transform: rotate(-180deg);
-  transform: rotate(-180deg);
-  padding-bottom: 5px;
-  background-image: url(../assets/images/icons/arrow.svg);
-  background-repeat: no-repeat;
+.accordion__tab .accordion__tab__headline .icon_check {
+  -moz-transform     : rotate(-180deg);
+  -o-transform       : rotate(-180deg);
+  -webkit-transform  : rotate(-180deg);
+  transform          : rotate(-180deg);
+  padding-bottom     : 5px;
+  background-image   : url(../assets/images/icons/arrow.svg);
+  background-repeat  : no-repeat;
   background-position: center;
 }
 
 @media only screen and (max-width: 650px) {
 
-  .faq-section .row{
+  .faq-section .row {
     padding: 0 30px
   }
 
-  .faq-section h1{
+  .faq-section h1 {
     margin-top: 0;
+  }
+
+  .accordion__tab__headline>h4 {
+    width: 230px;
   }
 
 }

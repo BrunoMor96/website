@@ -1,52 +1,52 @@
-.beneficios-section{
+.beneficios-section {
   text-align: center;
   margin-top: 80px;
-  color: #606060;
+  color     : #606060;
 }
 
-.benef{
+.benef {
   margin-bottom: 50px;
-  height: 105px;
-  border-right: 1.5px solid #e8e4e4;
+  height       : 105px;
+  border-right : 1.5px solid #e8e4e4;
 }
 
-.benef:last-child{
+.benef:last-child {
   border-right: none;
 }
 
-.benef .title{
-  font-size: 25px;
+.benef .title {
+  font-size  : 25px;
   line-height: 1.19;
-  margin-top: 15px !important;
+  margin-top : 15px !important;
 }
 
-.benef .subtitle{
-  font-size: 18px;
+.benef .subtitle {
+  font-size  : 18px;
   line-height: 1.19;
 }
 
 @media only screen and (max-width: 767px) {
-  .benef{
-    border: none;
-    height: 170px;
+  .benef {
+    border     : none;
+    height     : 170px;
     padding-top: 20px;
   }
 
-  .beneficios-section .row .benef:nth-child(1){
-    border-right: 1.5px solid #e8e4e4;
+  .beneficios-section .row .benef:nth-child(1) {
+    border-right : 1.5px solid #e8e4e4;
     border-bottom: 1.5px solid #e8e4e4;
   }
 
-  .beneficios-section .row .benef:nth-child(2){
+  .beneficios-section .row .benef:nth-child(2) {
     border-bottom: 1.5px solid #e8e4e4;
   }
 
-  .beneficios-section .row .benef:nth-child(3){
+  .beneficios-section .row .benef:nth-child(3) {
     border-right: 1.5px solid #e8e4e4;
-    margin-top: -50px;
+    margin-top  : -50px;
   }
 
-  .beneficios-section .row .benef:nth-child(4){
+  .beneficios-section .row .benef:nth-child(4) {
     margin-top: -50px;
   }
 

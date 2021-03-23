@@ -153,6 +153,7 @@
   display         : inline-block;
   transition      : all .3s;
   font-size       : 15px;
+  opacity         : 0;
 }
 
 .see-history:hover {

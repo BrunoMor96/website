@@ -1,11 +1,10 @@
-
 .contador-section {
   height             : 220px;
   margin-bottom      : 40px;
   background-image   : url(../assets/images/section-contador/fondo.png);
   background-size    : cover;
   background-position: center;
-  margin-top: -20px;
+  margin-top         : -20px;
 }
 
 .contador-section .contador {
@@ -24,7 +23,7 @@
   display        : flex;
   flex-wrap      : wrap;
   justify-content: center;
-  font-size: 18px;
+  font-size      : 18px;
 }
 
 .text-contador .odometer {
@@ -43,43 +42,43 @@
   border       : 1px solid #ff5722;
   min-width    : 64px;
   line-height  : 36px;
-  padding: 5px 25px;
+  padding      : 5px 25px;
   display      : inline-block;
   transition   : all .3s;
   margin-top   : 30px;
-  font-size: 17px;
+  font-size    : 17px;
 }
 
-.contador-smiledu:hover{
+.contador-smiledu:hover {
   background-color: rgba(242, 90, 0, 0.05);
 }
 
-.rayita{
-  width: 100%;
-  display: flex;
+.rayita {
+  width          : 100%;
+  display        : flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 10px;
+  align-items    : center;
+  margin-top     : 10px;
 }
 
-.raya{
-  width: 120px;
-  height: 1.5px;
+.raya {
+  width     : 120px;
+  height    : 1.5px;
   background: #e1e1e1;
-  margin: 0 20px;
+  margin    : 0 20px;
 }
 
-.star img{
+.star img {
   width: 20px;
 }
 
 @media only screen and (max-width: 767px) {
 
-  .raya{
-    width: 15%;
-    height: 1.5px;
+  .raya {
+    width     : 15%;
+    height    : 1.5px;
     background: #e1e1e1;
-    margin: 0 20px;
+    margin    : 0 20px;
   }
 
 }

@@ -1,86 +1,89 @@
-
 .landing-section {
   text-align: center;
 }
 
-.landing-section h1{
-  color: #606060;
-  line-height: 1.28;
+.landing-section h1 {
+  color         : #606060;
+  line-height   : 1.28;
   letter-spacing: 1px;
-  font-size: 45px;
+  font-size     : 45px;
 }
 
 .swiper-container {
-  width        : 100%;
-  height       : auto;
+  width : 100%;
+  height: auto;
 }
 
 .landing-section .swiper-wrapper {
-  padding: 70px 0;
+  padding       : 70px 0;
   padding-bottom: 0;
 }
 
-.inicial-png, .prin-sec-png, .esta-png, .group-png {
+.inicial-png,
+.prin-sec-png,
+.esta-png,
+.group-png {
   display        : flex;
   justify-content: center;
-  opacity: 0;
-  transition      : all .3s;
+  opacity        : 0;
+  transition     : all .3s;
 }
 
-#content:hover + #text , #content2:hover + #text2 {
-  opacity:1
+#content:hover+#text,
+#content2:hover+#text2 {
+  opacity: 1
 }
 
 
 .inicial-png img {
-  width: 130px;
-  height: 76px;
-  margin-left: 150px;
+  width        : 130px;
+  height       : 76px;
+  margin-left  : 150px;
   margin-bottom: 30px;
 }
 
-.group-png img{
-  width: 205px;
-  height: 105px;
+.group-png img {
+  width      : 205px;
+  height     : 105px;
   margin-left: 100px;
 }
 
-.prin-sec-png img{
-  width: 190px;
+.prin-sec-png img {
+  width      : 190px;
   margin-left: -70px;
-  margin-top: 20px;
+  margin-top : 20px;
 }
 
-.esta-png img{
-  width: 220px;
+.esta-png img {
+  width      : 220px;
   margin-left: 100px;
-  margin-top: 20px;
+  margin-top : 20px;
 }
 
 
 .info-landing {
-  border       : 1px solid #e8e4e4;
-  border-radius: 11px;
+  border         : 1px solid #e8e4e4;
+  border-radius  : 11px;
   border-collapse: collapse;
-  height       : auto;
-  margin-top: -10px;
-  position     : relative;
+  height         : auto;
+  margin-top     : -10px;
+  position       : relative;
 }
 
-.info-landing img{
-  width        : 100%;
-  display      : block;
-  height       : auto;
+.info-landing img {
+  width  : 100%;
+  display: block;
+  height : auto;
 }
 
 .info-landing .img-one {
-  border-top-left-radius: 9px;
-  border-top-right-radius : 9px;
+  border-top-left-radius : 9px;
+  border-top-right-radius: 9px;
 }
 
 
-.info-landing .img-two{
-  padding:25px 50px;
+.info-landing .img-two {
+  padding   : 25px 50px;
   border-top: 1px solid #e8e4e4;
 }
 
@@ -100,24 +103,24 @@
   border-radius   : 8px;
   padding         : 20px;
   color           : #8a8a8a;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  display         : flex;
+  flex-wrap       : wrap;
+  justify-content : center;
+  align-items     : center;
 }
 
-.hover-text p{
-  width: 204.6px;
-  height: 170.6px;
-  font-size: 20px;
-  opacity: 0.9;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.2;
+.hover-text p {
+  width         : 204.6px;
+  height        : 170.6px;
+  font-size     : 20px;
+  opacity       : 0.9;
+  font-weight   : normal;
+  font-stretch  : normal;
+  font-style    : normal;
+  line-height   : 1.2;
   letter-spacing: normal;
-  text-align: center;
-  color: #8a8a8a;
+  text-align    : center;
+  color         : #8a8a8a;
 }
 
 .info-landing:hover {
@@ -130,22 +133,22 @@
 }
 
 .hover-text .logo-kinder {
-  width: 210px;
+  width : 210px;
   height: 51px;
 }
 
 .hover-text .logo-school {
-  width: 210px;
+  width : 210px;
   height: 62px;
 }
 
 .hover-text .logo-group {
-  width: 210px;
+  width : 210px;
   height: 54px;
 }
 
 .hover-text .logo-public {
-  width: 210px;
+  width : 210px;
   height: 33px;
 }
 
@@ -159,40 +162,40 @@
   transition   : all .3s;
 }
 
-.see-more-kinder{
-  color        : #FF0266;
-  border       : 1px solid #FF0266;
-} 
+.see-more-kinder {
+  color : #FF0266;
+  border: 1px solid #FF0266;
+}
 
-.see-more-kinder:hover{
+.see-more-kinder:hover {
   background-color: #ffe6f0;
 }
 
-.see-more-schools{
-  color        : #5974EC;
-  border       : 1px solid #5974EC;
+.see-more-schools {
+  color : #5974EC;
+  border: 1px solid #5974EC;
 }
 
-.see-more-schools:hover{
+.see-more-schools:hover {
   background-color: #eff1fd;
 }
 
-.see-more-group{
-  color        : #4A6572;
-  border       : 1px solid #4A6572;
+.see-more-group {
+  color : #4A6572;
+  border: 1px solid #4A6572;
 }
 
-.see-more-group:hover{
+.see-more-group:hover {
   background-color: #edf0f1;
 }
 
-.see-more-public{
-  color        : #0064c6;
-  border       : 1px solid #0064c6;
+.see-more-public {
+  color : #0064c6;
+  border: 1px solid #0064c6;
 }
 
-.see-more-public:hover{
-  background-color:#e6f0f9;
+.see-more-public:hover {
+  background-color: #e6f0f9;
 }
 
 .display-none {
@@ -202,42 +205,43 @@
 
 @media only screen and (max-width: 1024px) {
 
-  .hover-text p{
-    width: 204.6px;
-    height: 90px;
-    font-size: 18px;
-    opacity: 0.9;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.2;
+  .hover-text p {
+    width         : 204.6px;
+    height        : 90px;
+    font-size     : 18px;
+    opacity       : 0.9;
+    font-weight   : normal;
+    font-stretch  : normal;
+    font-style    : normal;
+    line-height   : 1.2;
     letter-spacing: normal;
-    text-align: center;
-    color: #8a8a8a;
+    text-align    : center;
+    color         : #8a8a8a;
   }
 
 }
 
 @media only screen and (max-width: 650px) {
 
-  .inicial-png, .group-png  {
+  .inicial-png,
+  .group-png {
     opacity: 1 !important;
   }
 
   .landing-section {
-    height : calc(850px + 9 * ((100vw - 320px)/ 1224));
+    height: calc(850px + 9 * ((100vw - 320px)/ 1224));
   }
 
-  .landing-section .swiper-wrapper{
+  .landing-section .swiper-wrapper {
     padding: 0;
   }
 
-  .landing-section h1{
-    font-size: 25px;
+  .landing-section h1 {
+    font-size : 25px;
     margin-top: 20px;
   }
 
-  .info-landing-responsive{
+  .info-landing-responsive {
     margin-top: 15px;
   }
 
@@ -251,8 +255,9 @@
     opacity: 0;
   }
 
-  #content:hover + #text,#content2:hover + #text2 {
-    opacity:0
+  #content:hover+#text,
+  #content2:hover+#text2 {
+    opacity: 0
   }
 
 }
@@ -260,7 +265,7 @@
 @media only screen and (max-width: 400px) {
 
   .landing-section {
-    height : calc(760px + 9 * ((100vw - 320px)/ 1224));
+    height: calc(760px + 9 * ((100vw - 320px)/ 1224));
   }
 
 }
@@ -268,7 +273,7 @@
 @media only screen and (max-width: 330px) {
 
   .landing-section {
-    height : calc(670px + 9 * ((100vw - 320px)/ 1224));
+    height: calc(670px + 9 * ((100vw - 320px)/ 1224));
   }
 
 }

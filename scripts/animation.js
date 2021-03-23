@@ -1,3 +1,4 @@
+//LoaderWeb
 $(window).load(function () {
   $(".loader").fadeOut("slow");
 });
@@ -8,7 +9,6 @@ AOS.init();
 // NavAnimation
 const ani1 = document.querySelector('header .menu-area .ani1');
 const ani2 = document.querySelectorAll('header .menu-area ul li');
-
 ani2.forEach((list) => {
   list.addEventListener('click', () => {
     let position = list.getBoundingClientRect();
@@ -19,9 +19,7 @@ ani2.forEach((list) => {
     ani1.style.width = position.width + 'px';
   });
 });
-
 let buttons2 = document.querySelectorAll(".header-ul li a");
-
 buttons2.forEach(button => {
   button.addEventListener("click", _ => {
     buttons2.forEach(button => {
@@ -40,7 +38,6 @@ $(window).scroll(function () {
   }
 });
 
-
 // HoverAnimation
 $(function () {
   $('#content').hover(function () {
@@ -49,7 +46,6 @@ $(function () {
     $('#text').css('opacity', '0');
   });
 });
-
 $(function () {
   $('#content3').hover(function () {
     $('#text3').css('opacity', '1');
@@ -119,7 +115,6 @@ $holder.on("mouseenter", function () {
 }).on("mouseleave", function () {
   infinite.play();
 });
-
 $holder2.on("mouseenter", function () {
   infinite2.pause();
 }).on("mouseleave", function () {
@@ -129,7 +124,6 @@ $holder2.on("mouseenter", function () {
 //Activar desactivar scroll
 $(document).ready(function () {
   var $body = $('html,body');
-
   //Form-Videos-Block-Scroll
   $('#subs').on('click', function () {
     $body.addClass('block-scroll');
@@ -137,7 +131,6 @@ $(document).ready(function () {
   $('#close-modal').on('click', function () {
     $body.removeClass('block-scroll');
   });
-
   //Modal-Videos-Block-Scroll
   $('#youtube').on('click', function () {
     $body.addClass('block-scroll');
@@ -145,7 +138,6 @@ $(document).ready(function () {
   $('#close-youtube').on('click', function () {
     $body.removeClass('block-scroll');
   });
-
   //Modal-Videos-Block-Scroll-Movil
   $('#video-movil').on('click', function () {
     $body.addClass('block-scroll');
@@ -153,14 +145,12 @@ $(document).ready(function () {
   $('#close-movil').on('click', function () {
     $body.removeClass('block-scroll');
   });
-
 });
 
 // AniamtionModalFormInput
 $(".mat-input").focus(function () {
   $(this).parent().addClass("is-active is-completed");
 });
-
 $(".mat-input").focusout(function () {
   if ($(this).val() === "")
     $(this).parent().removeClass("is-completed");

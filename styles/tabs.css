@@ -1,14 +1,14 @@
 .tabs-section h1 {
-  color     : #606060;
-  text-align: center;
-  font-size: 45px;
+  color        : #606060;
+  text-align   : center;
+  font-size    : 45px;
   margin-bottom: 40px;
 }
 
 .tabsdemoDynamicHeight {
-  background-image: url(../assets/images/section-tabs/bg-header.png);
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-image     : url(../assets/images/section-tabs/bg-header.png);
+  background-size      : contain;
+  background-repeat    : no-repeat;
   background-position-x: right;
 }
 
@@ -21,10 +21,10 @@
   border    : 1px solid #e1e1e1; */
 }
 
-md-pagination-wrapper md-tab-item{
+md-pagination-wrapper md-tab-item {
   min-width: 0px !important;
-  margin: 0 20px !important;
-  padding: 10px 0 !important;
+  margin   : 0 20px !important;
+  padding  : 10px 0 !important;
 }
 
 .tabsdemoDynamicHeight md-content md-tabs md-tabs-wrapper {
@@ -36,123 +36,126 @@ md-pagination-wrapper md-tab-item{
 }
 
 md-tabs md-ink-bar {
-  color: #ff5722;
-  background: #ff5722;
-  height: 6px;
+  color        : #ff5722;
+  background   : #ff5722;
+  height       : 6px;
   border-radius: 10px 10px 0 0;
-  height: 3px !important;
-  position: absolute;
-  left: 150px;
+  height       : 3px !important;
+  position     : absolute;
+  left         : 150px;
 }
 
 .md-tab {
   text-transform: capitalize !important;
-  color: #838383 !important;
-  font-size: 20px !important;
-  transition: all .3s !important;
+  color         : #838383 !important;
+  font-size     : 20px !important;
+  transition    : all .3s !important;
 }
+
 .md-tab:hover {
   color: #ff5722 !important;
 }
-md-tabs .md-tab.md-active{
+
+md-tabs .md-tab.md-active {
   color: #ff5722 !important;
 }
 
-.content-academica{
-  margin-top: 60px !important;
+.content-academica {
+  margin-top  : 60px !important;
   padding-left: 5% !important;
 }
 
-.content-academica h3{
-  width: 409px;
-  height: 96px;
-  font-size: 35px;
-  font-weight: 500;
-  line-height: 1.2;
+.content-academica h3 {
+  width         : 409px;
+  height        : 96px;
+  font-size     : 35px;
+  font-weight   : 500;
+  line-height   : 1.2;
   letter-spacing: normal;
-  text-align: left;
-  color: #4e4e4e;
+  text-align    : left;
+  color         : #4e4e4e;
 }
 
-.content-academica p{
-  width: 380px;
-  height: 48px;
+.content-academica p {
+  width         : 380px;
+  height        : 48px;
+  margin-top    : 30px !important;
+  font-size     : 18px;
+  font-weight   : normal;
+  font-stretch  : normal;
+  font-style    : normal;
+  line-height   : 1.2;
+  letter-spacing: normal;
+  text-align    : left;
+  color         : #4e4e4e;
+}
+
+.content-academica ul {
   margin-top: 30px !important;
-  font-size: 18px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.2;
+  padding   : 0;
+}
+
+.content-academica ul li {
+  width         : 396px;
+  height        : auto;
+  margin-bottom : 15px !important;
+  font-size     : 18px;
+  font-weight   : normal;
+  font-stretch  : normal;
+  font-style    : normal;
+  line-height   : 1.2;
   letter-spacing: normal;
-  text-align: left;
-  color: #4e4e4e;
+  text-align    : left;
+  color         : #5f5f5f;
+  list-style    : none;
 }
 
-.content-academica ul{
-  margin-top: 30px !important;
-  padding:0;
-}
-
-.content-academica ul li{
-  width: 396px;
-  height: auto;
-  margin-bottom: 15px !important;
-  font-size: 18px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.2;
-  letter-spacing: normal;
-  text-align: left;
-  color: #5f5f5f;
-  list-style: none;
-}
-
-.content-academica ul img{
+.content-academica ul img {
   margin-right: 10px;
-  margin-top: -4px;
+  margin-top  : -4px;
 }
 
 .content-tabs .img-academica img {
   width: 100%;
 }
 
-.border-f{
-  width: 100%;
-  display: flex;
+.border-f {
+  width          : 100%;
+  display        : flex;
   justify-content: center;
 }
 
-.border-top{
-  height: 1px;
+.border-top {
+  height          : 1px;
   background-color: #c9c9c9;
-  z-index: -1;
-  width: 700px;
-  margin-top: -16px;
+  z-index         : -1;
+  width           : 700px;
+  margin-top      : -16px;
 }
 
-.img-academica{
+.img-academica {
   justify-content: center;
-  display: flex;
+  display        : flex;
 }
 
-.content-academica ul li img{
+.content-academica ul li img {
   width: 22px;
 }
 
 @media only screen and (max-width: 650px) {
 
-  md-pagination-wrapper md-tab-item{
+  md-pagination-wrapper md-tab-item {
     padding: 10px 0 !important;
-    margin: 0 5px !important;
+    margin : 0 5px !important;
   }
+
   md-pagination-wrapper.md-center-tabs {
     justify-content: space-around !important;
   }
 
   .tabsdemoDynamicHeight {
     background-image: none;
-    padding: 0 10px;
+    padding         : 0 10px;
   }
 
   .tabs-section h1 {
@@ -165,28 +168,28 @@ md-tabs .md-tab.md-active{
 
   .content-academica {
     padding-left: 0px !important;
-    margin-top: 30px !important;
+    margin-top  : 30px !important;
   }
 
-  .content-academica h3{
-    font-size: calc(24px + 9 * ((100vw - 320px)/ 1224))!important;
-    width: calc(254px + 9 * ((100vw - 320px)/ 1224))!important;
-    height: auto;
-  }
-  
-  .content-academica p{
-    font-size: calc(14px + 9 * ((100vw - 320px)/ 1224))!important;
-    width: calc(284px + 9 * ((100vw - 320px)/ 1224))!important;
-    height: auto;
-  }
-  
-  .content-academica ul li{
-    font-size: calc(14px + 9 * ((100vw - 320px)/ 1224))!important;
-    width: calc(284px + 9 * ((100vw - 320px)/ 1224))!important;
-    height: auto;
+  .content-academica h3 {
+    font-size: calc(24px + 9 * ((100vw - 320px)/ 1224)) !important;
+    width    : calc(254px + 9 * ((100vw - 320px)/ 1224)) !important;
+    height   : auto;
   }
 
-  .img-academica{
+  .content-academica p {
+    font-size: calc(14px + 9 * ((100vw - 320px)/ 1224)) !important;
+    width    : calc(284px + 9 * ((100vw - 320px)/ 1224)) !important;
+    height   : auto;
+  }
+
+  .content-academica ul li {
+    font-size: calc(14px + 9 * ((100vw - 320px)/ 1224)) !important;
+    width    : calc(284px + 9 * ((100vw - 320px)/ 1224)) !important;
+    height   : auto;
+  }
+
+  .img-academica {
     display: none;
   }
 
@@ -198,24 +201,22 @@ md-tabs .md-tab.md-active{
 
 @media only screen and (max-width: 330px) {
 
-  .content-academica p{
-    font-size: calc(14px + 9 * ((100vw - 320px)/ 1224))!important;
-    width: calc(220px + 9 * ((100vw - 320px)/ 1224))!important;
-    height: auto;
+  .content-academica p {
+    font-size: calc(14px + 9 * ((100vw - 320px)/ 1224)) !important;
+    width    : calc(220px + 9 * ((100vw - 320px)/ 1224)) !important;
+    height   : auto;
   }
 
-  .content-academica ul li{
-    width: calc(220px + 9 * ((100vw - 320px)/ 1224))!important;
+  .content-academica ul li {
+    width : calc(220px + 9 * ((100vw - 320px)/ 1224)) !important;
     height: auto;
   }
 }
 
 @media only screen and (max-width: 768px) {
 
-  .img-academica{
+  .img-academica {
     display: none;
   }
 
 }
-
-

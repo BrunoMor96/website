@@ -1,5 +1,5 @@
 .footer-section {
-  padding         : 15px 90px 90px 90px;
+  padding         : 0 90px 90px 90px;
   background-color: #f4f7f9;
   display         : flex;
   justify-content : center;
@@ -9,9 +9,9 @@
 }
 
 .footer {
-  width : 1500px;
+  width : 1200px;
   height: 420px;
-  margin: 50.6px 0 0;
+  margin: 40px 0 0;
 }
 
 .footer-options {
@@ -71,8 +71,8 @@
 }
 
 .footer-down .languaje .separador {
-  width : 0;
-  height: 21px;
+  width       : 0;
+  height      : 21px;
   border-right: solid 1px #767676;
 }
 
@@ -84,26 +84,26 @@
 }
 
 .footer-down .socials {
-  width: 135px;
-  display: flex;
-  align-items: center;
+  width          : 135px;
+  display        : flex;
+  align-items    : center;
   justify-content: space-around;
 }
 
-.footer-down .socials a{
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  padding-top: 2px;
-  transition      : all .3s;
+.footer-down .socials a {
+  width        : 30px;
+  height       : 30px;
+  text-align   : center;
+  padding-top  : 2px;
+  transition   : all .3s;
   border-radius: 50%;
 }
 
-.footer-down .socials a img{
+.footer-down .socials a img {
   border-radius: 50%;
 }
 
-.footer-down .socials a:hover img{
+.footer-down .socials a:hover img {
   background-color: white;
 }
 
@@ -117,6 +117,7 @@
   line-height   : 1.2;
   letter-spacing: 0.3px;
   color         : #898989;
+  margin-top    : 10px !important;
 }
 
 .footer .subscribe label {
@@ -215,6 +216,7 @@
   border-radius   : 21px;
   text-align      : center;
   transition      : all .3s;
+  width           : 300px;
   background-color: #ff5722;
   color           : white;
   border          : none;
@@ -409,18 +411,18 @@
     display: block;
   }
 
-  .group-icons .social-l{
-    display: flex;
+  .group-icons .social-l {
+    display        : flex;
     justify-content: space-around;
-    margin-top: 50px;
+    margin-top     : 50px;
   }
 
-  .group-icons .social-l a{
+  .group-icons .social-l a {
     padding: 0;
-    margin: 0;
+    margin : 0;
   }
 
-  .footer-down .socials{
+  .footer-down .socials {
     display: none !important;
   }
 

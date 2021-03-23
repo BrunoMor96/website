@@ -19,17 +19,17 @@ const ripple = (event) => {
 
   // Calculate radius
   const corners = [
-    {x: 0, y: 0},
-    {x: rect.width, y: 0},
-    {x: 0, y: rect.height},
-    {x: rect.width, y: rect.height},
+    { x: 0, y: 0 },
+    { x: rect.width, y: 0 },
+    { x: 0, y: rect.height },
+    { x: rect.width, y: rect.height },
   ];
   const distance = (x1, y1, x2, y2) => {
     const xDelta = x1 - x2;
     const yDelta = y1 - y2;
     return Math.sqrt(xDelta * xDelta + yDelta * yDelta);
   };
-  const cornerDistances = corners.map(function(corner) {
+  const cornerDistances = corners.map(function (corner) {
     return Math.round(distance(x, y, corner.x, corner.y));
   });
   const radius = Math.min(
@@ -60,7 +60,7 @@ const ripple = (event) => {
   ripple.style.marginTop = y - radius + 'px';
   ripple.style.backgroundColor = 'rgba(0, 0, 0, 0)';
 
-  window.setTimeout(function() {
+  window.setTimeout(function () {
     ripple.remove();
     rippleMask.remove();
     rippleContainer.remove();

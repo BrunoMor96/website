@@ -1,63 +1,88 @@
-.differences-section{
-  background-image: url(../assets/images/section-banner/bg-header.png);
+.differences-section {
+  background-image     : url(../assets/images/section-banner/bg-header.png);
   background-position-x: -40%;
-  background-repeat: no-repeat;
-  height: auto;
-  background-size: contain;
+  background-repeat    : no-repeat;
+  height               : auto;
+  background-size      : contain;
 }
 
-.differences-section h1{
+.differences-section h1 {
   text-align: center;
   margin-top: 80px;
-  color: #606060;
-  font-size: 45px;
+  color     : #606060;
+  font-size : 45px;
 }
 
-.swiper3 .swiper-slide .image{
-  padding: 0 45px;
+.swiper3 .swiper-slide .image {
+  padding   : 0 45px;
   margin-top: -40px;
 }
 
-.swiper3 .swiper-slide .image img{
-  width: 100%;
+.text-diference {
+  display    : flex;
+  align-items: center;
 }
 
-.swiper3 .swiper-slide .title{
-  font-size: 45px;
-  line-height: 1.1;
+.swiper3 .swiper-slide .image img {
+  width      : 70%;
+  margin-left: 150px;
+}
+
+.swiper3 .swiper-slide .title {
+  font-size     : 45px;
+  line-height   : 1.1;
   letter-spacing: 1px;
-  text-align: left;
-  color: #606060;
-  margin-top: 100px;
+  text-align    : left;
+  color         : #606060;
 }
 
-.swiper3 .swiper-slide .parrafo{
-  width: 460.1px;
-  margin: 30px 0 !important;
-  font-size: 21px;
+.swiper3 .swiper-slide .parrafo {
+  width      : 500px;
+  margin     : 30px 0 !important;
+  font-size  : 21px;
   line-height: 1.2;
-  text-align: left;
-  color: #606060;
+  text-align : left;
+  color      : #606060;
 }
 
-.swiper3 .swiper-slide span{
-  font-size: 17px;
+.swiper3 .swiper-slide span {
+  font-size  : 17px;
   line-height: 1.2;
-  text-align: left;
-  color: #4e4e4e;
+  text-align : left;
+  color      : #4e4e4e;
 }
 
-.swiper3 .swiper-slide .images-sincro{
-  margin-top: 70px;
-  display: flex;
+.swiper3 .swiper-slide .images-sincro {
+  margin-top     : 70px;
+  display        : flex;
   justify-content: space-between;
-  width: 529px;
-  height: 25px;
+  width          : 529px;
+  height         : 25px;
 }
 
-.swiper-pagination3{
+.swiper3 .swiper-slide .images-sunat {
+  margin-top     : 20px;
+  display        : flex;
+  justify-content: space-between;
+  width          : 529px;
+  height         : 40px;
+}
+
+.swiper3 .swiper-slide .images-banks {
+  display      : flex;
+  width        : 529px;
+  height       : 25px;
+  margin-bottom: 20px;
+  margin-top   : 10px;
+}
+
+.swiper3 .swiper-slide .images-banks img {
+  margin-right: 50px;
+}
+
+.swiper-pagination3 {
   position: absolute;
-  bottom: 0 !important;
+  bottom  : 0 !important;
 }
 
 .swiper-pagination3 .swiper-pagination-bullet {
@@ -74,59 +99,71 @@
 }
 
 @media only screen and (min-width: 1700px) {
-  .differences-section{
+  .differences-section {
     background-position-x: 0;
   }
 }
 
 @media only screen and (max-width: 1024px) {
-  .swiper3 .swiper-slide .image{
+  .swiper3 .swiper-slide .image {
     margin-top: 0px;
   }
 }
 
 @media only screen and (max-width: 768px) {
 
-  .differences-section{
+  .differences-section {
     background-image: none;
   }
-  .differences-section .swiper-wrapper{
+
+  .differences-section .swiper-wrapper {
     margin-bottom: 40px;
   }
 
-  .differences-section h1{
-    font-size: 25px;
-    padding: 0 20px;
+  .differences-section h1 {
+    font-size : 25px;
+    padding   : 0 20px;
     margin-top: 0;
   }
-  .swiper3 .swiper-slide .image{
-    display: none;
+
+  .swiper3 .swiper-slide .image {
+    padding-left   : 0;
+    display        : flex;
+    justify-content: center;
   }
-  .swiper3 .swiper-slide{
+
+  .swiper3 .swiper-slide .image img {
+    margin-left: 0;
+  }
+
+  .swiper3 .swiper-slide {
     padding: 0 10%;
   }
-  .swiper3 .swiper-slide .title{
-    font-size: 25px;
+
+  .swiper3 .swiper-slide .title {
+    font-size : 25px;
     margin-top: 30px;
-    width: 289.2px;
+    width     : 289.2px;
   }
-  .swiper3 .swiper-slide .parrafo{
-    width: 289.2px;
+
+  .swiper3 .swiper-slide .parrafo {
+    width    : 289.2px;
     font-size: 15px;
   }
 
-  .swiper3 .swiper-slide span{
+  .swiper3 .swiper-slide span {
     font-size: 13px;
   }
 
-  .swiper3 .swiper-slide .images-sincro{
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    width: auto;
+  .swiper3 .swiper-slide .images-sincro {
+    margin-top           : 30px;
+    display              : grid;
+    grid-template-columns: auto;
+    width                : auto;
+    gap                  : 25px;
   }
 
-  .swiper3 .swiper-slide .images-sincro img{
+  .swiper3 .swiper-slide .images-sincro img {
     width: 90%;
   }
 
