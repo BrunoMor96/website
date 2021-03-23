@@ -228,7 +228,7 @@ md-tabs .md-tab.md-active {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 651px) and (max-width: 768px) {
 
   .img-academica {
     display: none;

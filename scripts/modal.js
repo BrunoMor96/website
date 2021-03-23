@@ -11,6 +11,19 @@ closeBtn.addEventListener("click", function () {
   modalContainer.classList.remove("show");
 });
 
+// Modal Form  Hablar con Asesora
+const openBtnAsesor = document.querySelector(".open-asesora");
+const modalContainer3 = document.querySelector(".modal-form-asesora");
+const closeAsesora = document.querySelector(".close-asesora");
+
+openBtnAsesor.addEventListener("click", function () {
+  modalContainer3.classList.add("show");
+});
+
+closeAsesora.addEventListener("click", function () {
+  modalContainer.classList.remove("show");
+});
+
 // Modal Video Youtube - Banner
 const openYoutubeBanner = document.querySelector(".youtube-one");
 const modalContainer2 = document.querySelector(".modal-video-one");
@@ -26,19 +39,16 @@ openYoutubeBanner.addEventListener("click", function (e) {
   e.preventDefault();
   $('.videos-youtube').children('iframe').attr('src', src);
 });
-
 closeVideo2.addEventListener("click", function (e) {
   modalContainer2.classList.remove("show-video");
   e.preventDefault();
   $('.videos-youtube').children('iframe').attr('src', '');
 });
-
 openYoutubeMovil.addEventListener("click", function (e) {
   modalContainer3.classList.add("show-video-movile");
   e.preventDefault();
   $('.videos-youtube').children('iframe').attr('src', src);
 });
-
 closeVideo2.addEventListener("click", function (e) {
   modalContainer3.classList.remove("show-video-movile");
   e.preventDefault();
