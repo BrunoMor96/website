@@ -16,11 +16,16 @@ nav {
   box-shadow: none
 }
 
+.logo-movile,
+.input-movile {
+  display: none;
+}
+
 nav #menuBtn {
   position: absolute;
   right   : 23px;
   top     : 25px;
-  z-index : 9999999;
+  z-index : 9999999999;
   height  : 25px;
   opacity : 0;
   width   : 25px;
@@ -59,7 +64,7 @@ nav ul {
 
 .header-ul {
   margin-bottom: 0;
-  z-index      : 99999999;
+  z-index      : 9999;
   margin-top   : -37px;
 }
 
@@ -76,6 +81,7 @@ nav ul lo a {
   font-size      : 16px;
   text-decoration: none;
   transition     : all .3s;
+  margin-bottom  : 20px;
 }
 
 nav ul li a:hover {
@@ -156,8 +162,9 @@ nav ul li a.active {
     top   : -1px;
   }
 
-  .header-ul {
-    margin-top: 17px;
+  .logo-movile,
+  .input-movile {
+    display: block;
   }
 
   nav .logo {
@@ -187,10 +194,11 @@ nav ul li a.active {
   }
 
   nav ul li {
-    display    : block;
-    min-width  : 80%;
-    text-align : center;
-    line-height: 4rem;
+    display        : flex;
+    justify-content: center;
+    width          : 90%;
+    line-height    : 4rem;
+    border-bottom  : 1px solid #c1c1c1;
   }
 
   nav ul .ventas a:hover {
@@ -198,9 +206,14 @@ nav ul li a.active {
   }
 
   nav ul li a {
-    display  : block;
-    font-size: 24px;
-    height   : 48px;
+    font-size      : 24px;
+    height         : 48px;
+    border-radius  : 25px;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    width          : 50%;
+    margin-top     : 20px;
   }
 
   .espacio {
@@ -222,7 +235,7 @@ nav ul li a.active {
 
   nav .menu-area #menuBtn:checked~label.menuBtn i::before {
     content : url(../assets/images/icons/close.svg);
-    z-index : 999;
+    z-index : 99999999;
     color   : #898989;
     position: absolute;
     top     : 0;
@@ -247,7 +260,44 @@ nav ul li a.active {
   }
 
   .header-ul .seacrhi {
-    margin-top: 25px;
+    display: none;
+  }
+
+  .input-search {
+    position        : relative;
+    margin-top      : 40px;
+    margin-bottom   : 20px;
+    border          : none;
+    width           : 90%;
+    height          : 45px;
+    padding         : 10px 14.7px 10.5px 27.8px;
+    border-radius   : 19px;
+    background-color: #f6f8fa;
+  }
+
+  .input-search input {
+    background-color: transparent;
+    border          : none;
+    outline         : none;
+    color           : #747474;
+    width           : 80%;
+  }
+
+  .input-search input::placeholder {
+    color: #c1c1c1;
+  }
+
+  .input-search img {
+    position: absolute;
+    right   : 25px;
+  }
+
+  nav ul .ventas {
+    display: none;
+  }
+
+  nav ul li a:hover {
+    background-color: #f6f8fa;
   }
 
 }
