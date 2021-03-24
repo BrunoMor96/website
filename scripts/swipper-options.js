@@ -24,10 +24,10 @@ const swiper2 = new Swiper('.swiper2', {
     el: '.swiper-pagination2',
     clickable: true,
   },
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 3000,
+  //   disableOnInteraction: false,
+  // },
 });
 
 const swiper3 = new Swiper('.swiper3', {

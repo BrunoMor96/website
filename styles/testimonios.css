@@ -160,8 +160,6 @@
   box-shadow: 0 5px 5px -3px rgb(0 0 0 / 20%), 0 8px 10px 1px rgb(0 0 0 / 14%), 0 3px 14px 2px rgb(0 0 0 / 12%);
 }
 
-.see-kinder {}
-
 .personaje,
 .info-personaje {
   justify-content: center;
@@ -274,7 +272,7 @@
   line-height  : 1.2;
   color        : #5f5f5f;
   margin-bottom: 20px !important;
-  padding-top: 20px;
+  padding-top  : 20px;
 }
 
 .text-personaje span {
@@ -362,7 +360,7 @@
 
   .text-personaje-movile {
     width           : 330px;
-    height          : 310px;
+    height          : 380px;
     border-radius   : 15px;
     box-shadow      : 0 3px 30px 0 rgba(0, 0, 0, 0.16);
     background-color: #ffffff;
@@ -386,7 +384,6 @@
     font-style    : normal;
     line-height   : 1.3;
     letter-spacing: normal;
-    text-align    : left;
     color         : #707070;
     font-weight   : bold;
     margin-top    : 20px;
@@ -399,7 +396,6 @@
     font-style    : normal;
     line-height   : 1.3;
     letter-spacing: normal;
-    text-align    : left;
     color         : #707070;
     margin-top    : 0 !important;
   }
@@ -428,6 +424,12 @@
 
   .swiper-pagination-bullet-active {
     opacity: 1;
+  }
+
+  .image-cole {
+    display        : flex;
+    justify-content: center;
+    margin-top     : 10px;
   }
 
 }

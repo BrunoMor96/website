@@ -141,4 +141,13 @@
     font-size      : 19px;
   }
 
+  .contact-section .boton-group a {
+    margin-right: 0;
+  }
+
+  .contact-section .boton-group .asesora,
+  .contact-section .boton-group .begin-now {
+    width: 100%;
+  }
+
 }
