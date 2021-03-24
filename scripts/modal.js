@@ -41,16 +41,3 @@ closeVideo2.addEventListener("click", function (e) {
   e.preventDefault();
   $('.videos-youtube').children('iframe').attr('src', '');
 });
-
-// Modal Form  Hablar con Asesora
-const openBtnAsesor = document.querySelector(".open-asesora");
-const modalContainer4 = document.querySelector(".modal-form-asesora");
-const closeAsesora = document.querySelector(".close-asesora");
-
-openBtnAsesor.addEventListener("click", function () {
-  modalContainer4.classList.add("show-form-asesora");
-});
-
-closeAsesora.addEventListener("click", function () {
-  modalContainer4.classList.remove("show-form-asesora");
-});

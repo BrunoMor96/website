@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <title>Home | Smiledu</title>
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <!-- CSS General Sections -->
+  <link href="./styles/style.css" rel="stylesheet">
+  <link href="./styles/nav.css" rel="stylesheet">
+  <link href="./styles/footer.css" rel="stylesheet">
+  <link href="./styles/modal.css" rel="stylesheet">
+  <link href="./pages/search-cole/searcher.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="./styles/css-bootstrap/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- AnimationsScrolls -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+</head>
+
+<body>
+
+  <div class="loader">
+    <div class="square">
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <header data-aos="fade-down" data-aos-delay="0" data-aos-duration="800">
+    <nav id="border--bottom">
+      <img id="logo" class="logo" src="./assets//images/logos/smiledu--logo-text.png">
+
+      <div class="menu-area">
+        <div class="ani1">
+        </div>
+        <input type="checkbox" id="menuBtn">
+        <label for="menuBtn" class="menuBtn">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </label>
+        <ul class="header-ul">
+
+          <!-- Vista solo en movile  -->
+          <img class="logo-movile" src="./assets/images/icons/logo-f.png" alt="">
+          <div class="input-movile input-search">
+            <input type="buscar" placeholder="Buscar mi colegio" name="" id="">
+            <img src="./assets/images/icons/search.svg">
+          </div>
+          <!-- End Vista solo en movile  -->
+
+          <li style="display: none"><a href="index.html">Inicio</a></li>
+          <span class="espacio">---</span>
+          <li style="display: none"><a href="#">Producto</a></li>
+          <span class="espacio">---</span>
+          <li style="display: none"><a href="#">Blog</a></li>
+          <span class="espacio">---</span>
+          <lo class="empieza"><a href="https://register.smiledu.com/" target="_blank"><span class="begin-smiledu">Empieza ahora</span></a></lo>
+          <span class="espacio">---</span>
+          <a class="search-school">
+            <img src="./assets/images/icons/search.svg" alt="">
+            &nbsp;&nbsp;
+            <p>Busca tu colegio</p>
+          </a>
+          <!-- <lo class="ventas"><a href="#"><span class="sales-smiledu">Hablar con ventas</span></a></lo> -->
+          <span class="espacio">---</span>
+
+          <!-- Vista solo en desktop  -->
+          <div class="nav-socials">
+            <a href="https://www.facebook.com/smileduhq" target="_blank">
+              <img src="./assets/images/section-footer/facebook.svg" alt="">
+            </a>
+            &nbsp;
+            <a href="https://www.youtube.com/channel/UC1eibVuG0Ey6lXhrngVb2RA" target="_blank">
+              <img src="./assets/images/section-footer/youtube.svg" alt="">
+            </a>
+          </div>
+          <!-- Vista solo en desktop  -->
+
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="space">
+  </section>
+
+  <br> <br>
+
+  <div class="searcher-section container">
+    <img src="./pages/search-cole/background-searcher.png">
+    <div class="input-searcher">
+
+      <form id="form">
+        <input type="text" id="search" placeholder="Buscar tu colegio..." />
+        <button class="button-search">
+          <img src="./assets/images/icons/search.svg" alt="">
+        </button>
+      </form>
+
+      <div id="result" class="container"></div>
+
+      <div class="no-search">
+        <p>¿No encontraste tu colegio?</p>
+        <a>Crear tu colegio</a>
+      </div>
+    </div>
+
+    <div id="more"></div>
+  </div>
+
+  <footer class="footer-section">
+    <div class="footer">
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 20px">
+          <div class="col-4">
+            <img src="./assets/images/section-footer/logo-grisgris.png">
+          </div>
+        </div>
+        <div class="col-md-6 subscribe">
+          <p>Smiledu es una comunidad que está <br>transformando la gestión de las<br> instituciones
+            educativas con una<br> plataforma integral, moderna y completa.
+          </p>
+          <label>Suscríbete para recibir nuestras noticias:</label>
+          <button id="subs" class="open">
+            Subscribirse
+          </button>
+        </div>
+        <div class="col-md-4 links-footer">
+          <ul>
+            <li><a style="text-decoration: underline">Inicio</a></li>
+            <li><a style="text-decoration: underline">FAQ's</a></li>
+            <li><a style="text-decoration: underline">Políticas de Privacidad</a></li>
+            <li><a style="text-decoration: underline">Terminos y Condiciones</a></li>
+            <li><a style="text-decoration: underline">Contáctanos</a></li>
+            <li><a>Santiago de Surco</a></li>
+            <li><a>Lima - Perú</a></li>
+            <li style="display: none"><a href="">Terminos y Condiciones</a></li>
+          </ul>
+
+        </div>
+        <div class="col-md-2 links-contact">
+
+          <img src="./assets/images/section-footer/startup-peru.webp">
+          <img src="./assets/images/section-footer/innovate.webp">
+          <img src="./assets/images/section-footer/logo-01-grande.png">
+
+        </div>
+        <div class="col-md-12 links-landing">
+          <span>Tu institución es un:</span>
+          <br><br>
+          <div class="url-landing">
+            <a class="go-to-kinder">
+              <img src="./assets/images/section-footer/kinder.png" alt="">
+              Kinder
+            </a>
+            <a class="go-to-school">
+              <img src="./assets/images/section-footer/school.png" alt="">
+              Schools
+            </a>
+            <a class="go-to-group">
+              <img src="./assets/images/section-footer/group.png" alt="">
+              Educational Group
+            </a>
+            <a class="go-to-public">
+              <img src="./assets/images/section-footer/public.png" alt="">
+              Public
+            </a>
+          </div>
+          <div class="icons-footer">
+            <div class="group-icons">
+              <img src="./assets/images/section-footer/startup-peru.webp">
+              <img src="./assets/images/section-footer/innovate.webp">
+              <img src="./assets/images/section-footer/logo-01-grande.png">
+              <div class="social-l">
+
+                <a href="https://www.facebook.com/smileduhq" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 180.599 180.604">
+                    <g transform="translate(-12466.183 16675.912)">
+                      <g transform="translate(12466.183 -16675.912)">
+                        <path
+                          d="M92.135,182.433a90.3,90.3,0,1,1,90.295-90.3A90.4,90.4,0,0,1,92.135,182.433Zm0-169.77a79.474,79.474,0,1,0,79.472,79.473A79.565,79.565,0,0,0,92.135,12.662Z"
+                          transform="translate(-1.831 -1.83)" fill="#ff5722" />
+                        <path
+                          d="M62.572,25.828H49.231A5.239,5.239,0,0,0,44,31.064V45.624H62.572l-2.925,18.65H44v46.877H24.533V64.274H8.881V45.624H24.533V31.064a24.721,24.721,0,0,1,24.7-24.7H62.572Z"
+                          transform="translate(54.758 34.58)" fill="#ff5722" />
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+
+                <a href="https://www.youtube.com/channel/UC1eibVuG0Ey6lXhrngVb2RA" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 180.599 180.604">
+                    <g transform="translate(-12719 16677)">
+                      <g transform="translate(12719 -16677)">
+                        <path
+                          d="M92.134,295.266a90.3,90.3,0,1,1,90.3-90.3A90.4,90.4,0,0,1,92.134,295.266Zm0-169.77a79.473,79.473,0,1,0,79.472,79.473A79.565,79.565,0,0,0,92.134,125.5Z"
+                          transform="translate(-1.83 -114.663)" fill="#ff5722" />
+                      </g>
+                      <g transform="translate(-0.301 -0.273)">
+                        <path
+                          d="M41.479,136.546,17.206,123.267a4.455,4.455,0,0,0-6.6,3.909v26.332a4.445,4.445,0,0,0,6.571,3.927l24.273-13.053a4.456,4.456,0,0,0,.027-7.835ZM17.043,150.195V130.516l18.144,9.93Z"
+                          transform="translate(12787.546 -16727.469)" fill="#ff5722" />
+                        <path
+                          d="M114.793,139.692l-.009-.045c-.09-.885-1.02-8.747-4.847-12.746A17.808,17.808,0,0,0,98.1,121.349l-.542-.072-.2-.018c-14.524-1.056-36.45-1.2-36.676-1.2H60.65c-.217,0-22.152.144-36.8,1.2l-.2.018-.515.063a17.469,17.469,0,0,0-11.771,5.723c-3.638,3.963-4.694,11.654-4.8,12.52l-.009.108c-.036.37-.8,9.135-.8,17.928v8.215c0,8.792.767,17.557.8,17.928l.009.054c.09.867,1.02,8.585,4.82,12.593,4.152,4.55,9.415,5.145,12.24,5.47.442.054.83.1,1.092.144l.253.036c8.386.794,34.672,1.183,35.791,1.2h.063c.226,0,22.152-.144,36.676-1.2l.19-.018c.19-.027.388-.045.614-.072a17,17,0,0,0,11.672-5.579c3.647-3.963,4.694-11.654,4.8-12.52l.018-.108c.027-.37.8-9.135.8-17.928v-8.215C115.6,148.827,114.82,140.062,114.793,139.692Zm-5.633,26.142c0,8.142-.713,16.519-.776,17.3-.28,2.121-1.39,6.987-3.159,8.919a10.587,10.587,0,0,1-7.6,3.521c-.244.027-.478.054-.686.081-14.046,1.011-35.15,1.164-36.116,1.173-1.092-.018-27-.415-35.132-1.164-.415-.072-.867-.126-1.336-.171-2.41-.28-5.7-.659-8.232-3.439l-.063-.063c-1.742-1.824-2.816-6.373-3.1-8.828-.054-.587-.776-9.063-.776-17.323v-8.215c0-8.133.7-16.5.776-17.287.325-2.5,1.453-7.077,3.159-8.928a11.092,11.092,0,0,1,7.754-3.665l.524-.063c14.253-1.02,35.511-1.173,36.27-1.183.767.009,22.016.162,36.134,1.183l.569.063a11.547,11.547,0,0,1,7.889,3.575l.018.027c1.751,1.814,2.825,6.445,3.1,8.955.054.551.785,9.045.785,17.323Z"
+                          transform="translate(12748.552 -16748.785)" fill="#ff5722" />
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+
+                <a href="https://www.instagram.com/smileduhq/" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 180.6 180.604">
+                    <g transform="translate(-12983.049 16677.057)">
+                      <g transform="translate(12983.049 -16677.057)">
+                        <path
+                          d="M92.394,330.307A90.3,90.3,0,1,1,182.689,240,90.4,90.4,0,0,1,92.394,330.307Zm0-169.77A79.473,79.473,0,1,0,171.857,240,79.563,79.563,0,0,0,92.394,160.536Z"
+                          transform="translate(-2.09 -149.704)" fill="#ff5722" />
+                        <g transform="translate(38.896 40.459)">
+                          <path
+                            d="M74.046,161.353a29.662,29.662,0,0,1,29.626,29.626v30.638a29.662,29.662,0,0,1-29.626,29.627H43.192a29.656,29.656,0,0,1-29.626-29.627V190.98a29.656,29.656,0,0,1,29.626-29.626H74.046m0-7.167H43.192A36.9,36.9,0,0,0,6.4,190.98v30.638a36.9,36.9,0,0,0,36.793,36.794H74.046a36.9,36.9,0,0,0,36.784-36.794V190.98a36.9,36.9,0,0,0-36.784-36.794Z"
+                            transform="translate(-6.399 -154.186)" fill="#ff5722" />
+                          <path
+                            d="M39.805,163.69A23.971,23.971,0,1,1,15.83,187.657,23.993,23.993,0,0,1,39.805,163.69m0-7.077a31.044,31.044,0,1,0,31.043,31.044,31.041,31.041,0,0,0-31.043-31.044Z"
+                            transform="translate(12.568 -134.704)" fill="#ff5722" />
+                          <ellipse cx="3.771" cy="3.771" rx="3.771" ry="3.771" transform="translate(74.991 16.104)"
+                            fill="#ff5722" />
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+
+                <a href="https://www.linkedin.com/company/smiledu/mycompany/" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 180.599 180.604">
+                    <g transform="translate(-13252 16671)">
+                      <g transform="translate(13251.505 -16671.396)">
+                        <g transform="translate(0 0)">
+                          <path
+                            d="M92.134,261.933a90.3,90.3,0,1,1,90.3-90.3A90.4,90.4,0,0,1,92.134,261.933Zm0-169.77a79.474,79.474,0,1,0,79.472,79.474A79.565,79.565,0,0,0,92.134,92.162Z"
+                            transform="translate(-1.335 -80.934)" fill="#ff5722" />
+                        </g>
+                        <g transform="translate(57.717 54.135)">
+                          <path
+                            d="M83.914,131.676V159.66H67.693V133.545c0-6.554-2.347-11.031-8.214-11.031a8.884,8.884,0,0,0-8.332,5.931,11.219,11.219,0,0,0-.533,3.954V159.66H34.384s.217-44.223,0-48.809h16.23v6.924l-.108.154h.108v-.154c2.148-3.322,6-8.07,14.623-8.07C75.907,109.7,83.914,116.683,83.914,131.676ZM17.4,87.327c-5.551,0-9.18,3.647-9.18,8.431,0,4.685,3.529,8.44,8.973,8.44H17.3c5.66,0,9.171-3.755,9.171-8.44C26.377,90.974,22.965,87.327,17.4,87.327ZM9.19,159.66H25.411V110.851H9.19Z"
+                            transform="translate(-13.446 -87.065)" fill="#ff5722" />
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Begin Form Subs Modal -->
+  <section class="modal-container">
+    <div class="modal-one">
+      <div id="mc_embed_signup">
+        <button id="close-modal" class="modal-btn close">
+          <img src="./assets/images/icons/close.svg" alt="">
+        </button>
+        <form action="https://smiledu.us1.list-manage.com/subscribe/post?u=6b5fffd6906e6f17c5791a145&amp;id=55adb95733"
+          method="post" autocomplete="off" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+          class="validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+            <h2>Suscríbete a nuestras noticias</h2>
+            <div class="mc-field-group mat-div input-form">
+              <label for="first-name" class="mat-label">Nombre completo *</label>
+              <input type="text" value="" name="FNAME" class="required mat-input" id="mce-FNAME">
+            </div>
+            <div class="mc-field-group size1of2 mat-div input-form">
+              <label for="first-name" class="mat-label">Teléfono o número *</label>
+              <input type="text" name="PHONE" class="required mat-input" value="" id="mce-PHONE">
+            </div>
+            <div class="mc-field-group mat-div input-form">
+              <label for="first-name" class="mat-label">Email *</label>
+              <img style="position: absolute; top: 20px; right: 20px" src="./assets/images/icons/mensaje-icon.svg">
+              <input type="email" value="" name="EMAIL" class="required email mat-input" id="mce-EMAIL">
+            </div>
+            <input style="opacity: 0;" class="text" type="text">
+            <div class="acept-polic">
+              <label class="acept">Acepto las <a href="https://smiledu.com/legal/0" style="color: #787878;"
+                  target="_blank">políticas de privacidad
+                  y los términos y condiciones.</a>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div id="mce-responses" class="clear">
+              <div class="response" id="mce-error-response" style="display:none"></div>
+              <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                name="b_6b5fffd6906e6f17c5791a145_55adb95733" tabindex="-1" value=""></div>
+            <div class="clear">
+              <input type="submit" value="Suscribirse" name="subscribe" id="mc-embedded-subscribe" class="button">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- End Form Subs Modal -->
+
+  <div style="display: flex; justify-content: center">
+    <button id="volver-arriba" class="to-up">
+      <img style="margin-bottom: 22px; width: 15px" src="./assets/images/icons/arrow.svg">
+    </button>
+  </div>
+
+  <section class="footer-options">
+    <div class="footer-down">
+      <span class="copy">Copyright © 2021 smiledu</span>
+      <div class="languaje">
+        <span class="espanol">Español</span>
+        <span class="separador"></span>
+        <span class="ingles">English</span>
+      </div>
+      <span class="copy socials" style="display: flex; align-items: center;justify-content: space-around;">
+        <a href="https://www.facebook.com/smileduhq" target="_blank">
+          <img src="./assets/images/section-footer/facebook.svg" alt="">
+        </a>
+        <a href="https://www.youtube.com/channel/UC1eibVuG0Ey6lXhrngVb2RA" target="_blank">
+          <img src="./assets/images/section-footer/youtube.svg" alt="">
+        </a>
+        <a href="https://www.instagram.com/smileduhq/" target="_blank">
+          <img src="./assets/images/section-footer/instagram.svg" alt="">
+        </a>
+
+        <a href="https://www.linkedin.com/company/smiledu/mycompany/" target="_blank">
+          <img src="./assets/images/section-footer/linke.svg" alt="">
+        </a>
+
+      </span>
+    </div>
+  </section>
+
+  <script src="./pages/search-cole/search.js"></script>
+
+  <!--Begin mc_embed_signup-->
+  <script type='text/javascript' src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+  <script type='text/javascript' src="./scripts/mailcham.js"></script>
+  <!--End mc_embed_signup-->
+  <script src="./scripts/js-bootstrap/bootstrap.bundle.min.js"></script>
+
+  <!-- jquery -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  <!-- Scroll Aniamtions -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- Funciones Variadas -->
+  <script src="./scripts/animation.js"></script>
+  <!-- Modal  -->
+  <script src="./scripts/modal.js"></script>
+  <!-- Input animation  -->
+  <script src="./scripts/input-animation.js"></script>
+
+</body>
+
+</html>

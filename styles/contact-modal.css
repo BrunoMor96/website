@@ -1,0 +1,279 @@
+.modal-form-asesora {
+  position        : fixed;
+  top             : 0;
+  left            : 0;
+  background-color: rgba(255, 255, 255, .95);
+  height          : 100%;
+  width           : 100%;
+  display         : flex;
+  align-items     : center;
+  justify-content : center;
+  z-index         : 99999;
+  opacity         : 0;
+  pointer-events  : none;
+  transition      : all 0.2s ease-in-out;
+}
+
+.show-form-asesora {
+  opacity       : 1;
+  pointer-events: auto;
+}
+
+.modal-form-asesora .form-asesora {
+  position     : relative;
+  border       : none;
+  padding      : 30px;
+  border-radius: 5px;
+  box-shadow   : 0 11px 15px -7px rgb(0 0 0 / 20%), 0 24px 38px 3px rgb(0 0 0 / 14%), 0 9px 46px 8px rgb(0 0 0 / 12%);
+  width        : 850px;
+  max-width    : 80%;
+  margin       : auto;
+  background   : white;
+}
+
+.modal-form-asesora .form-asesora h2,
+.modal-form-asesora .form-asesora p {
+  text-align: center;
+  color     : #606060;
+}
+
+.modal-form-asesora .form-asesora .input-form {
+  float: none;
+}
+
+.inputs-forms {
+  display        : flex;
+  justify-content: space-between;
+}
+
+.inputs-forms .input-asesora {
+  width: 49%;
+}
+
+.confirm-aseso {
+  display       : flex;
+  flex-direction: column;
+  align-items   : center;
+}
+
+.confirm-aseso div {
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  border         : 1px solid #ff5722;
+  outline        : none;
+  border-radius  : 100px;
+  background     : white;
+  color          : #ff5722;
+  padding        : 5px 15px;
+  height         : 45px;
+  margin-bottom  : 20px;
+  margin-top     : 10px;
+}
+
+.confirm-aseso div:hover {
+  background-color: rgba(242, 90, 0, 0.05);
+}
+
+.close-asesora {
+  position        : absolute;
+  right           : 11%;
+  z-index         : 999;
+  top             : 10px;
+  background-color: transparent;
+  border          : none;
+  outline         : none;
+}
+
+
+/* ===== Select Box ===== */
+.sel {
+  display                : inline-block;
+  width                  : 100%;
+  background-color       : transparent;
+  position               : relative;
+  background-color       : #f3f3f3 !important;
+  border                 : 0 !important;
+  border-bottom          : 2px solid rgba(0, 0, 0, 0.08) !important;
+  outline                : none !important;
+  border-top-right-radius: 16px !important;
+  border-top-left-radius : 16px !important;
+  height                 : 55px !important;
+  margin-bottom          : 10px;
+}
+
+.sel::before {
+  position : absolute;
+  content  : url(../assets/images/icons/arrow.svg);
+  right    : 20px;
+  top      : calc(50% - 0.5em);
+  transform: rotateX(-180deg);
+  top      : 15px;
+}
+
+.sel.active::before {
+  transform: rotateX(0);
+}
+
+.sel__placeholder {
+  display            : block;
+  font-size          : 16px;
+  color              : #838e95;
+  padding            : 15px 10px 10px 10px;
+  text-align         : left;
+  pointer-events     : none;
+  -webkit-user-select: none;
+  -moz-user-select   : none;
+  -ms-user-select    : none;
+  user-select        : none;
+  visibility         : visible;
+}
+
+.sel.active .sel__placeholder {
+  visibility: hidden;
+}
+
+.sel__placeholder::before {
+  position     : absolute;
+  top          : 0;
+  bottom       : 0;
+  left         : 0;
+  right        : 0;
+  padding      : 15px 10px 10px 10px;
+  content      : attr(data-placeholder);
+  visibility   : hidden;
+  color        : #ff5722;
+  border-bottom: 2px solid #ff5722;
+}
+
+.sel.active .sel__placeholder::before {
+  visibility: visible;
+}
+
+.sel__box {
+  position        : absolute;
+  top             : calc(100% + 4px);
+  left            : -4px;
+  display         : none;
+  list-style-type : none;
+  text-align      : left;
+  font-size       : 1em;
+  background-color: #FFF;
+  width           : calc(100% + 8px);
+  box-sizing      : border-box;
+  z-index         : 999;
+  border-radius   : 10px;
+  box-shadow      : 0 6px 6px 0 rgb(32 33 36 / 28%);
+}
+
+.sel.active .sel__box {
+  display          : block;
+  -webkit-animation: fadeInUp 500ms;
+  animation        : fadeInUp 500ms;
+}
+
+.sel__box__options {
+  display            : list-item;
+  font-size          : 16px;
+  color              : #838e95;
+  padding            : 5px 10px;
+  -webkit-user-select: none;
+  -moz-user-select   : none;
+  -ms-user-select    : none;
+  user-select        : none;
+}
+
+.sel__box__options::after {
+  content    : url(../assets/images/section-footer/check-icon.png);
+  margin-left: 5px;
+  display    : none;
+}
+
+.sel__box__options.selected::after {
+  display: inline;
+}
+
+.sel__box__options:hover {
+  background-color: #ebedef;
+}
+
+/* ----- Select Box Black Panther ----- */
+.sel {
+  border-bottom: 4px solid rgba(0, 0, 0, 0.3);
+}
+
+.sel--black-panther {
+  z-index: 3;
+}
+
+/* ----- Select Box Superman ----- */
+.sel--superman {
+  /*   display: none; */
+  z-index: 2;
+}
+
+/* ===== Keyframes ===== */
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity  : 0;
+    transform: translate3d(0, 20px, 0);
+  }
+
+  to {
+    opacity  : 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity  : 0;
+    transform: translate3d(0, 20px, 0);
+  }
+
+  to {
+    opacity  : 1;
+    transform: none;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .modal-form-asesora .form-asesora {
+    width   : calc(360px + 9 * ((100vw - 320px)/ 1224));
+    height  : calc(536px + 9 * ((100vw - 320px)/ 1224));
+    overflow: scroll;
+  }
+
+  .inputs-forms {
+    flex-direction: column;
+  }
+
+  .inputs-forms .input-asesora {
+    width: 100%;
+  }
+
+  .close-asesora {
+    right: 12%;
+  }
+
+}

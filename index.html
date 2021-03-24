@@ -23,6 +23,7 @@
   <link href="./styles/faq.css" rel="stylesheet" />
   <link href="./styles/footer.css" rel="stylesheet" />
   <link href="./styles/modal.css" rel="stylesheet" />
+  <link href="./styles/contact-modal.css" rel="stylesheet" />
   <!-- Bootstrap CSS -->
   <link href="./styles/css-bootstrap/bootstrap.min.css" rel="stylesheet">
   <!-- Odometer Css -->
@@ -55,7 +56,7 @@
 
   <header data-aos="fade-down" data-aos-delay="0" data-aos-duration="800">
     <nav id="border--bottom">
-      <img id="logo" class="logo" src="./assets//images/logos/smiledu--logo-text.png">
+      <img id="logo" class="logo" src="./assets/images/logos/smiledu--logo-text.png">
 
       <div class="menu-area">
         <div class="ani1">
@@ -74,19 +75,19 @@
           </div>
           <!-- End Vista solo en movile  -->
 
-          <li><a href="#">Inicio</a></li>
+          <li style="display: none"><a href="#">Inicio</a></li>
           <span class="espacio">---</span>
-          <li><a href="#">Producto</a></li>
+          <li style="display: none"><a href="#">Producto</a></li>
           <span class="espacio">---</span>
-          <li><a href="#">Blog</a></li>
+          <li style="display: none"><a href="#">Blog</a></li>
           <span class="espacio">---</span>
-          <lo class="empieza"><a href="#"><span class="begin-smiledu">Empieza ahora</span></a></lo>
+          <lo class="empieza"><a  href="https://register.smiledu.com/" target="_blank"><span class="begin-smiledu">Empieza ahora</span></a></lo>
           <span class="espacio">---</span>
-          <button class="search-school">
+          <a href="searcher.html" class="search-school">
             <img src="./assets/images/icons/search.svg" alt="">
             &nbsp;&nbsp;
             <p>Busca tu colegio</p>
-          </button>
+          </a>
           <!-- <lo class="ventas"><a href="#"><span class="sales-smiledu">Hablar con ventas</span></a></lo> -->
           <span class="espacio">---</span>
 
@@ -141,7 +142,7 @@
                   </svg>
                   <span class="banner-video-smiledu">Ver video</span>
                 </button>
-                <a href="#">
+                <a href="https://register.smiledu.com/" target="_blank">
                   <span class="banner-begin-smiledu">
                     Empieza ahora
                   </span>
@@ -1189,7 +1190,7 @@
             &nbsp;&nbsp;Hablar con Asesora
           </button>
           &nbsp;&nbsp;
-          <a class="begin-now">¡Empieza ahora!</a>
+          <a href="https://register.smiledu.com/" target="_blank" class="begin-now">¡Empieza ahora!</a>
         </div>
       </div>
     </div>
@@ -1330,24 +1331,19 @@
         </div>
         <div class="col-md-4 links-footer">
           <ul>
-            <li><a>Inicio</a></li>
-            <li><a>Producto</a></li>
-            <li><a>Blog</a></li>
-            <li><a>Soporte</a></li>
-            <li><a>FAQ's</a></li>
-            <li><a>Políticas de Privacidad</a></li>
-            <li><a>Terminos y Condiciones</a></li>
+            <li><a style="text-decoration: underline">Inicio</a></li>
+            <li><a style="text-decoration: underline">FAQ's</a></li>
+            <li><a style="text-decoration: underline">Políticas de Privacidad</a></li>
+            <li><a style="text-decoration: underline">Terminos y Condiciones</a></li>
+            <li><a style="text-decoration: underline">Contáctanos</a></li>
+            <li><a>Santiago de Surco</a></li>
+            <li><a>Lima - Perú</a></li>
             <li style="display: none"><a href="">Terminos y Condiciones</a></li>
           </ul>
+
         </div>
         <div class="col-md-2 links-contact">
-          <ul>
-            <li><a>Contáctanos</a></li>
-            <li><a>Surco Lima - Perú</a></li>
-            <li><a>hi@smiledu.com</a></li>
-            <li><a>+511 984232962</a></li>
-            <li><a>01 704 3467</a></li>
-          </ul>
+
           <img src="./assets/images/section-footer/startup-peru.webp">
           <img src="./assets/images/section-footer/innovate.webp">
           <img src="./assets/images/section-footer/logo-01-grande.png">
@@ -1465,7 +1461,7 @@
     </div>
   </footer>
 
-  <!-- Begin Form Subs Modal -->
+  <!-- Begin Form Subs Modal Mailchamp -->
   <section class="modal-container">
     <div class="modal-one">
       <div id="mc_embed_signup">
@@ -1514,7 +1510,7 @@
       </div>
     </div>
   </section>
-  <!-- End Form Subs Modal -->
+  <!-- End Form Subs Modal mailchamp -->
 
   <!-- Begin Video Youtube Banner  -->
 
@@ -1580,9 +1576,15 @@
                 <input type="text" value="" class="required mat-input">
               </div>
 
-              <div class="mat-div input-form">
-                <label class="mat-label">Tipo de I.E. *</label>
-                <input type="text" value="" class="required mat-input">
+              <div class="sel">
+                <select>
+                  <option value="" disabled>Tipo de I.E. *</option>
+                  <option value="promotor">Promotor</option>
+                  <option value="director">Director</option>
+                  <option value="coordinador">Coordinador</option>
+                  <option value="docente">Docente</option>
+                  <option value="sistemas">TICS/Sistemas</option>
+                </select>
               </div>
 
             </div>
@@ -1595,9 +1597,12 @@
                 <input type="email" value="" class="mat-input">
               </div>
 
-              <div class="mat-div input-form">
-                <label class="mat-label">Cargo *</label>
-                <input type="text" value="" class="required mat-input">
+              <div class="sel">
+                <select>
+                  <option value="" disabled>Cargo *</option>
+                  <option value="privada">Privada</option>
+                  <option value="publica">Pública</option>
+                </select>
               </div>
 
               <div class="mat-div input-form">
@@ -1702,10 +1707,16 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <!-- Funciones Variadas -->
   <script src="./scripts/animation.js"></script>
+  <!-- InfiniteScroll -->
+  <script src="./scripts/infinite-scroll.js"></script>
   <!-- Ripple  -->
   <script src="./scripts/ripple.js"></script>
   <!-- Modal  -->
   <script src="./scripts/modal.js"></script>
+  <!-- Modal  -->
+  <script src="./scripts/contact.modal.js"></script>
+  <!-- Input animation  -->
+  <script src="./scripts/input-animation.js"></script>
 
 </body>
 
