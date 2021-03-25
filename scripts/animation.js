@@ -91,3 +91,31 @@ $(document).ready(function () {
     $body.removeClass('block-scroll');
   });
 });
+
+//ABRIR Y CERRAR MENU CON CHECK
+$("#menuBtn").on("click", function () {
+  $(".case").prop("checked", this.checked);
+});
+$(".case").on("click", function () {
+  if ($(".case").length == $(".case:checked").length) {
+    $("#menuBtn").prop("checked", true);
+  } else {
+    $("#menuBtn").prop("checked", false);
+  }
+});
+
+
+$(function () {
+  $('a[href*=#]').click(function () {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+      && location.hostname == this.hostname) {
+      var $target = $(this.hash);
+      $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
+      if ($target.length) {
+        var targetOffset = $target.offset().top;
+        $('html,body').animate({ scrollTop: targetOffset }, 1000);
+        return false;
+      }
+    }
+  });
+});

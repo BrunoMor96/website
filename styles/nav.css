@@ -31,6 +31,17 @@ nav #menuBtn {
   width   : 25px;
 }
 
+nav #closeNav{
+  height: 45px;
+    opacity: 0;
+    width: 45px;
+  z-index : 9999999999;
+}
+
+.closeMenu{
+  display: none;
+}
+
 .menuBtn img {
   width: 25px;
 }
@@ -198,6 +209,19 @@ nav ul li a.active {
     display: block;
   }
 
+  .logo-movile{
+    width: 20vh;
+    position: absolute;
+    top: 6px;
+    left: 20px;
+  }
+
+  .closeMenu{
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
   nav .logo {
     height  : 35px;
     position: absolute;
@@ -206,6 +230,10 @@ nav ul li a.active {
 
   nav .menuBtn {
     display: initial;
+  }
+
+  nav .closeMenu{
+    margin-top: 40px;
   }
 
   nav ul {
@@ -264,17 +292,28 @@ nav ul li a.active {
     top : 0;
   }
 
+  nav .menu-area #closeNav:checked~label.menuBtn2 i::before {
+    content: url(../assets/images/icons/close.svg);
+    z-index: 99;
+    color: #898989;
+    position: absolute;
+    opacity: 1;
+    top: 12px;
+    padding: 20px 22px;
+    left: -6px;
+    border-radius: 50%;
+    box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
+  }
+
   nav .menu-area #menuBtn:checked~label.menuBtn i::before {
-    content      : url(../assets/images/icons/close.svg);
+    content      : url(../assets/images/icons/menu.svg);
     z-index      : 99999999;
     color        : #898989;
     position     : absolute;
     top          : -10px;
-    right        : -15px;
-    opacity      : 0.5;
+    right        : -25px;
+    opacity      : 1;
     padding      : 15px 20px;
-    border-radius: 50%;
-    box-shadow   : 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
   }
 
   .begin-smiledu,
@@ -298,33 +337,39 @@ nav ul li a.active {
   }
 
   .input-search {
-    position        : relative;
-    margin-top      : 40px;
-    margin-bottom   : 20px;
-    border          : none;
-    width           : 90%;
-    height          : 45px;
-    padding         : 10px 14.7px 10.5px 27.8px;
-    border-radius   : 19px;
-    background-color: #f6f8fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #747474;
+    margin-top: 50px;
   }
 
-  .input-search input {
-    background-color: transparent;
+  .input-search .search-movile{
+    display         : flex;
+    align-items     : center;
+    padding         : 5px 15px;
+    justify-content : space-around;
+    border-radius   : 100px;
+    margin: 20px 0;
+    transition      : all .3s;
+    background-color: white;
+    color           : #747474;
+    text-decoration : none;
+    height          : 45px;
     border          : none;
     outline         : none;
-    color           : #747474;
-    width           : 80%;
+    box-shadow: 0 5px 5px -3px rgb(0 0 0 / 20%), 0 8px 10px 1px rgb(0 0 0 / 14%), 0 3px 14px 2px rgb(0 0 0 / 12%);
+  
   }
 
-  .input-search input::placeholder {
-    color: #c1c1c1;
+  .begin-smiledu {
+    box-shadow: 0 5px 5px -3px rgb(0 0 0 / 20%), 0 8px 10px 1px rgb(0 0 0 / 14%), 0 3px 14px 2px rgb(0 0 0 / 12%);
   }
 
-  .input-search img {
-    position: absolute;
-    right   : 25px;
-  }
+ .input-search span a{
+   text-decoration: none;
+   color           : #747474;
+ }
 
   nav ul .ventas {
     display: none;

@@ -24,6 +24,7 @@
   <link href="./styles/footer.css" rel="stylesheet" />
   <link href="./styles/modal.css" rel="stylesheet" />
   <link href="./styles/contact-modal.css" rel="stylesheet" />
+  <link href="./styles/modal-testimonio.css" rel="stylesheet" />
   <!-- Bootstrap CSS -->
   <link href="./styles/css-bootstrap/bootstrap.min.css" rel="stylesheet">
   <!-- Odometer Css -->
@@ -61,17 +62,26 @@
       <div class="menu-area">
         <div class="ani1">
         </div>
-        <input type="checkbox" id="menuBtn">
+        <input type="checkbox" class="mycheckbox" id="menuBtn">
         <label for="menuBtn" class="menuBtn">
           <i class="fa fa-bars" aria-hidden="true"></i>
         </label>
         <ul class="header-ul">
 
           <!-- Vista solo en movile  -->
-          <img class="logo-movile" src="./assets/images/icons/logo-f.png" alt="">
+          <img class="logo-movile" src="./assets/images/logos/smiledu--logo-text.png" alt="">
           <div class="input-movile input-search">
-            <input type="buscar" placeholder="Buscar mi colegio" name="" id="">
-            <img src="./assets/images/icons/search.svg">
+            <strong>¿Eres usuario?</strong>
+            <span>
+              Busca tu colegio
+              <strong><a href="searcher.html" target="_blank">Aquí</a></strong>
+            </span>
+            <a href="searcher.html" target="_blank" class="search-movile">
+              <img src="./assets/images/icons/search.svg" alt="">
+              &nbsp;&nbsp;Buscar mi colegio
+            </a>
+            <span><strong>Prueba gratis</strong> nuestra</span>
+            <span>Plataforma durante <strong>7 días</strong></span>
           </div>
           <!-- End Vista solo en movile  -->
 
@@ -81,7 +91,19 @@
           <span class="espacio">---</span>
           <li style="display: none"><a href="#">Blog</a></li>
           <span class="espacio">---</span>
-          <lo class="empieza"><a  href="https://register.smiledu.com/" target="_blank"><span class="begin-smiledu">Empieza ahora</span></a></lo>
+          <lo class="empieza">
+            <a href="https://register.smiledu.com/" target="_blank">
+              <span class="begin-smiledu">Empieza ahora</span>
+            </a>
+          </lo>
+
+          <div class="closeMenu">
+            <input type="checkbox" id="closeNav" class="case close-nav">
+            <label for="menuBtn2" class="menuBtn2">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+          </div>
+
           <span class="espacio">---</span>
           <a href="searcher.html" class="search-school">
             <img src="./assets/images/icons/search.svg" alt="">
@@ -108,7 +130,7 @@
     </nav>
   </header>
 
-  <section class="space">
+  <section id="banner" class="space">
   </section>
 
   <section class="banner-section">
@@ -173,7 +195,7 @@
 
         <div class="col-md-6">
           <div class="buttons-movile" style="margin-bottom: 40px;">
-            <a class="begin-movile">Empieza Ahora</a>
+            <a href="https://register.smiledu.com/" target="_blank" class="begin-movile">Empieza Ahora</a>
             <button id="video-movil" class="youtube-movile">
               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 154.121 154.121">
                 <g transform="translate(-13324.977 15505.237)">
@@ -224,7 +246,7 @@
           <p>Instituciones Educativas</p>
           <p style="padding-left: 5px">que confían en nosotros.</p>
         </span>
-        <a><span class="contador-smiledu">Ver testimonios</span></a>
+        <a href="#testimonios"><span class="contador-smiledu">Ver testimonios</span></a>
       </div>
     </div>
   </section>
@@ -256,7 +278,7 @@
                 Obtén el control completo de todas las áreas de tu Kinder con una plataforma integral
                 y colaborativa para tus papitos y estudiantes.
               </p>
-              <a href="#"><span class="see-more see-more-kinder">Ver más</span></a>
+              <a style="display: none;" href="#"><span class="see-more see-more-kinder">Ver más</span></a>
             </div>
           </div>
 
@@ -283,7 +305,7 @@
                 Impulsa el crecimiento ordenado de tu colegio en un espacio muy adaptable a todas
                 las necesidades de tu institución.
               </p>
-              <a href="#"><span class="see-more see-more-schools">Ver más</span></a>
+              <a style="display: none;" href="#"><span class="see-more see-more-schools">Ver más</span></a>
             </div>
 
           </div>
@@ -315,7 +337,7 @@
                 Administra tu grupo educativo con una herramienta de vanguardia que se
                 integra a tus áreas y sistemas.
               </p>
-              <a href="#"><span class="see-more see-more-group">Ver más</span></a>
+              <a style="display: none;" href="#"><span class="see-more see-more-group">Ver más</span></a>
             </div>
           </div>
 
@@ -342,7 +364,7 @@
               <p>
                 Ahora los colegios del estado también pueden gestionar sus procesos en una
                 plataforma moderna, y amigable.</p>
-              <a href="#"><span class="see-more see-more-public">Ver más</span></a>
+              <a style="display: none;" href="#"><span class="see-more see-more-public">Ver más</span></a>
             </div>
           </div>
 
@@ -470,7 +492,7 @@
                     <p>Monitorea las clases, cursos, calificaciones y olvídate de la
                       información dispersa. </p>
 
-                    <ul>
+                    <ul id="testimonios">
                       <li><img src="./assets/images/icons/check.png" alt="">Monitoreo de asistencia de estudiantes.</li>
                       <li><img src="./assets/images/icons/check.png" alt="">Calificaciones y reportes por curso.</li>
                       <li><img src="./assets/images/icons/check.png" alt="">Sincronizado con Google Workspace.</li>
@@ -613,10 +635,10 @@
                     Erika Tume, la Promotora que descubrió una forma
                     colaborativa y ágil de conectar a su comunidad educativa.
                   </p>
-                  <!-- <button class="see-kinder">
+                  <button class="see-kinder">
                     <img src="./assets/images/icons/play-icon-kinder.png" alt="">
                     <span>Ver historia</span>
-                  </button> -->
+                  </button>
                 </div>
               </div>
             </div>
@@ -650,13 +672,13 @@
                   <h6>'Smiledu historias' presenta:</h6>
                   <img width="180px" src="./assets/images/section-testimonios/logo-schools.png" alt="">
                   <p>
-                    Nilton Zuloeta, el Coordinador que cambió la
-                    manera de gestionar a su equipo de docentes y estudiantes.
+                    Fernando Armas, el Promotor que cambió la manera de
+                    gestionar a su equipo de docentes y estudiantes.
                   </p>
-                  <!-- <button class="see-school">
+                  <button class="see-school">
                     <img src="./assets/images/icons/play-icon-schools.png" alt="">
                     <span>Ver historia</span>
-                  </button> -->
+                  </button>
                 </div>
               </div>
             </div>
@@ -666,8 +688,10 @@
               </div>
               <div class="info-personaje">
                 <div class="text-personaje">
-                  <p>"Estamos cambiando y Smiledu nos ha brindado lo mejor de su talento humano y
-                    tecnológico, además es una empresa dedicada 100% a sus clientes". </p>
+                  <p>
+                    "Smiledu ha permitido la continuidad de las clases y el
+                    acercamiento de la enseñanza hacia los estudiantes fuera de las aulas".
+                  </p>
                   <img width="50px" src="./assets/images/section-testimonios/kinderking-testimonio-loog@2x.png" alt="">
                   <span>
                     <strong> I.E.P. Bilingüe Kinderking </strong>
@@ -692,10 +716,10 @@
                     Fernando Salas, el Director que logró integrar todas
                     las sedes de su grupo educativo en una sola plataforma.
                   </p>
-                  <!-- <button class="see-group">
+                  <button class="see-group">
                     <img src="./assets/images/icons/play-icon-group.png" alt="">
                     <span>Ver historia</span>
-                  </button> -->
+                  </button>
                 </div>
               </div>
             </div>
@@ -802,8 +826,8 @@
           <div class="col-sm-12">
             <h4 class="h4">'Smiledu historias' presenta:</h4>
             <p class="span">
-              <strong>Nilton Zuloeta, </strong>el Coordinador que cambió la
-              manera de gestionar a su equipo de docentes y estudiantes.
+              <strong>Fernando Armas</strong> el Promotor que cambió la manera de
+              gestionar a su equipo de docentes y estudiantes.
             </p>
           </div>
 
@@ -811,8 +835,8 @@
             <img class="person" src="./assets/images/section-testimonios/profe-school.png" alt="">
             <div class="personaje-movile">
               <div class="text-personaje-movile">
-                <p>"Estamos cambiando y Smiledu nos ha brindado lo mejor de su talento humano y
-                  tecnológico, además es una empresa dedicada 100% a sus clientes".</p>
+                <p>"Smiledu ha permitido la continuidad de las clases y el acercamiento de la enseñanza
+                  hacia los estudiantes fuera de las aulas".</p>
                 <div class="image-cole">
                   <img width="80px" src="./assets/images/section-testimonios/kinderking-testimonio-loog@2x.png" alt="">
                 </div>
@@ -1004,7 +1028,7 @@
                 <h5 class="title">Sincronización directa con <br> la SUNAT - Fact. Electrónica</h5>
                 <p class="parrafo">
                   Smiledu realiza el envío individual y correcto de los comprobantes generados a
-                  la SUNAT, cada vez que serealiza el pago de alguna de las pensiones de los
+                  la SUNAT, cada vez que se realiza el pago de alguna de las pensiones de los
                   estudiantes.
                   <br><br>
                   • Tu contador y secretaria con menos carga laboral<br>
@@ -1029,7 +1053,7 @@
                 <h5 class="title">Exportación fácil y masiva <br> de calificaciones a SIAGIE</h5>
                 <p class="parrafo">
                   Descarga y sube calificaciones de forma masiva a SIAGIE. Compartir tus
-                  nóminas de matrícula y actasconsolidadas de evaluación es más fácil con nuestro
+                  nóminas de matrícula y actas consolidadas de evaluación es más fácil con nuestro
                   sistema de exportación.<br>
                   Con Smiledu mantienes tu SIAGIE siempre actualizado.
                   <br><br>
@@ -1196,7 +1220,7 @@
     </div>
   </section>
 
-  <section data-aos="fade-up" data-aos-duration="800" class="faq-section container">
+  <section id="faq" data-aos="fade-up" data-aos-duration="800" class="faq-section container">
     <h1>FAQs</h1>
     <div class="row">
       <div class="accordion">
@@ -1235,9 +1259,11 @@
             <div class="accordion__tab__content">
               <div class="accordion-parraf">
                 <p>
-                  Nuestra plataforma no cuenta con un costo único para todas las instituciones.
-                  Si buscas que te realicemos una cotización de acuerdo a las necesidades de tu colegio,
-                  kinder o grupo educativo haz Click Aquí y te atenderemos en la máxima brevedad posible.</p>
+                  Nuestra plataforma no cuenta con un costo único para todas las instituciones
+                  educativa. Si buscas que te realicemos una cotización de acuerdo a las necesidades
+                  de tu colegio, kinder o grupo educativo puedes contactarnos, y te ayudaremos a
+                  resolver todas tus dudas.
+                </p>
               </div>
             </div>
           </li>
@@ -1331,11 +1357,11 @@
         </div>
         <div class="col-md-4 links-footer">
           <ul>
-            <li><a style="text-decoration: underline">Inicio</a></li>
-            <li><a style="text-decoration: underline">FAQ's</a></li>
+            <li><a href="#banner" style="text-decoration: underline">Inicio</a></li>
+            <li><a href="#faq" style="text-decoration: underline">FAQ's</a></li>
             <li><a style="text-decoration: underline">Políticas de Privacidad</a></li>
             <li><a style="text-decoration: underline">Terminos y Condiciones</a></li>
-            <li><a style="text-decoration: underline">Contáctanos</a></li>
+            <li><a class="open-modal-asesora" style="text-decoration: underline">Contáctanos</a></li>
             <li><a>Santiago de Surco</a></li>
             <li><a>Lima - Perú</a></li>
             <li style="display: none"><a href="">Terminos y Condiciones</a></li>
@@ -1539,19 +1565,19 @@
 
   <!-- Begin Formulario Asesora Modal  -->
 
-  <section class="modal-form-asesora">
+  <section class="modal-form-asesora modal-asesora">
 
     <div style="position: relative">
 
-      <button id="close-asesora" class="close-asesora">
+      <button id="close-asesora" class="close-asesora close-asesora2">
         <img src="./assets/images/icons/close.svg" alt="">
       </button>
 
-      <form method="post" autocomplete="off">
-        <div class="form-asesora">
+      <form id="formAsesor">
+        <div class="form-asesora" id="form-asesora">
 
           <h2>Contáctanos</h2>
-          <p>Completa el forumulario y nuestra asesota se pondrá <br> en contacto contigo
+          <p>Completa el formulario y nuestra asesora se pondrá <br> en contacto contigo
             en la brevedad posible
           </p>
 
@@ -1563,27 +1589,27 @@
 
               <div class="mat-div input-form">
                 <label class="mat-label">Nombre y Apellidos *</label>
-                <input type="text" value="" class="required mat-input">
+                <input type="text" value="" class="required mat-input" required maxlength="60" minlength="7"
+                  style="text-transform: capitalize;" name="nombres">
               </div>
 
               <div class="mat-div input-form">
                 <label class="mat-label">Teléfono *</label>
-                <input type="text" value="" class="required mat-input">
+                <input type="text" value="" class="required mat-input" maxlength="20" required minlength="9"
+                  name="telefono">
               </div>
 
               <div class="mat-div input-form">
                 <label class="mat-label">Institucion Educativa *</label>
-                <input type="text" value="" class="required mat-input">
+                <input type="text" value="" class="required mat-input" maxlength="40" required minlength="8"
+                  style="text-transform:uppercase" name="inst_edu">
               </div>
 
               <div class="sel">
-                <select>
+                <select required name="cmbTipo">
                   <option value="" disabled>Tipo de I.E. *</option>
-                  <option value="promotor">Promotor</option>
-                  <option value="director">Director</option>
-                  <option value="coordinador">Coordinador</option>
-                  <option value="docente">Docente</option>
-                  <option value="sistemas">TICS/Sistemas</option>
+                  <option value="Privada">Privada</option>
+                  <option value="Pública">Pública</option>
                 </select>
               </div>
 
@@ -1594,36 +1620,36 @@
               <div class="mat-div input-form">
                 <label class="mat-label">Email *</label>
                 <img style="position: absolute; top: 20px; right: 20px" src="./assets/images/icons/mensaje-icon.svg">
-                <input type="email" value="" class="mat-input">
+                <input type="email" value="" name="correo" class="mat-input" maxlength="60" required minlength="6">
               </div>
 
               <div class="sel">
-                <select>
+                <select required name="cargo">
                   <option value="" disabled>Cargo *</option>
-                  <option value="privada">Privada</option>
-                  <option value="publica">Pública</option>
+                  <option value="Promotor">Promotor</option>
+                  <option value="Director">Director</option>
+                  <option value="Coordinador">Coordinador</option>
+                  <option value="Sistemas">TICS/Sistemas</option>
                 </select>
               </div>
 
               <div class="mat-div input-form">
                 <label class="mat-label">Distrito de I.E. *</label>
-                <input type="text" value="" class="required mat-input">
+                <input type="text" value="" class="required mat-input" maxlength="40" required minlength="3"
+                  style="text-transform:uppercase" name="distrito">
               </div>
 
               <div class="mat-div input-form">
                 <label class="mat-label">Nro. de Estudiantes *</label>
-                <input type="text" value="" class="required mat-input">
+                <input type="number" value="" class="required mat-input" min="1" max="99999" required name="nro_estu">
               </div>
 
             </div>
 
           </div>
-
           <div class="confirm-aseso">
 
-            <div>
-              Contáctanos
-            </div>
+            <input type="submit" value="Contáctanos" class="confirm-contact-disabled" id="btnEnviar">
 
             <p>
               No te preocupes tus datos se quedan seguros. <br>
@@ -1633,12 +1659,66 @@
           </div>
 
         </div>
+        <div class="form-asesora thank-you" id="form-mensaje" style="display: none" >
+          
+          <img src="./assets/images/section-contact/illustracion.png" alt="">
+          <br>
+          <span>¡Muchas Gracias!</span>
+          <p>Pronto estaremos comunicandonos <br> contigo.</p>
+
+        </div>
       </form>
     </div>
 
   </section>
 
   <!-- End Formulario Asesora Modal  -->
+
+  <!-- Begin Modal Kinder  -->
+  <section class="modal-kinder">
+    <div class="container-kinder">
+      <button class="close-kinder">
+        <img src="./assets/images/icons/close.svg" alt="">
+      </button>
+      <div class="video-kinder">
+        <iframe src="https://www.youtube.com/embed/VZCmFgIO_J0" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+  <!-- End Modal Kinder  -->
+
+  <!-- Begin Modal School  -->
+  <section class="modal-school">
+    <div class="container-school">
+      <button class="close-school">
+        <img src="./assets/images/icons/close.svg" alt="">
+      </button>
+      <div class="video-school">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-aCUBK1RKFA" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+  <!-- End Modal School  -->
+
+  <!-- Begin Modal Group  -->
+  <section class="modal-group">
+    <div class="container-group">
+      <button class="close-group">
+        <img src="./assets/images/icons/close.svg" alt="">
+      </button>
+      <div class="video-group">
+        <iframe src="https://www.youtube.com/embed/W5mxINVp6LE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+          gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+  <!-- End Modal Group  -->
 
   <div style="display: flex; justify-content: center">
     <button id="volver-arriba" class="to-up">
@@ -1713,8 +1793,12 @@
   <script src="./scripts/ripple.js"></script>
   <!-- Modal  -->
   <script src="./scripts/modal.js"></script>
-  <!-- Modal  -->
+  <!-- Modal Contact -->
   <script src="./scripts/contact.modal.js"></script>
+  <!-- Modal Yooutube -->
+  <script src="./scripts/video-modal.js"></script>
+  <!-- Modal Testimonios -->
+  <script src="./scripts/video-testimonios.js"></script>
   <!-- Input animation  -->
   <script src="./scripts/input-animation.js"></script>
 

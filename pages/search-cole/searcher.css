@@ -2,24 +2,30 @@
   display       : flex;
   flex-direction: column;
   align-items   : center;
-  color: #606060;
+  color         : #898989;
+  height        : 100vh;
 }
 
 .input-searcher {
   position     : relative;
   width        : 530px;
   box-shadow   : 0 6px 6px 0 rgb(32 33 36 / 28%);
-  border-radius: 30px;
+  border-radius: 25px;
 }
 
 .input-searcher input {
   width        : 100%;
   border-radius: 25px;
-  border       : 1px solid #746e6e;
   padding      : 0 .75em 0 2.75em;
+  border       : 1px solid rgba(0, 0, 0, .12);
   height       : 45px;
   outline      : none;
-  color: #898989;
+  color        : #898989;
+  transition   : all 0.3s;
+}
+
+.input-searcher input:hover {
+  box-shadow: 0 6px 6px 0 rgb(32 33 36 / 10%);
 }
 
 .input-searcher .button-search {
@@ -33,24 +39,108 @@
 .no-search {
   display        : flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px 20px 20px;
+  align-items    : center;
+  padding        : 0 15px;
+  height         : 60px;
 }
 
-.no-search a{
-  border-radius: 100px;
-  border-color: #ccc;
-  border: 1px solid #898989;
-  padding: 0 15px;
-  line-height: 34px;
+.no-search a {
+  border-radius  : 100px;
+  border-color   : #898989;
+  border         : 1px solid #898989;
+  padding        : 0 15px;
+  line-height    : 34px;
+  text-decoration: none;
+  color          : #898989;
 }
 
-.container .colegios{
-  border-bottom: 1px solid #c1c1c1;
-  margin-top: 5px;
+.no-search a:hover {
+  color           : #898989;
+  background-color: rgba(0, 0, 0, .05);
 }
 
-.container .colegios li{
-  display: flex;
+.content-colegios {
+  padding : 0 !important;
+  position: relative;
+}
+
+.content-colegios .colegios {
+  max-height: 205px;
+  overflow  : auto;
+  padding   : 0;
+}
+
+.content-colegios .colegios::-webkit-scrollbar {
+  width : 8px;
+  height: 100px;
+}
+
+.content-colegios .colegios::-webkit-scrollbar-thumb {
+  background   : #c1c1c1;
+  border-radius: 4px;
+}
+
+.content-colegios .colegios::-webkit-scrollbar-track {
+  background   : #e8e4e4;
+  border-radius: 4px;
+}
+
+.premium {
+  margin-left: -15px;
+  margin-top : 15px;
+}
+
+.escudo-cole strong {
+  margin-left: 10px;
+}
+
+.escudo-cole .logo-cole {
+  border-radius: 50%;
+}
+
+.go-cole {
+  border          : none;
+  outline         : none;
+  color           : #898989;
+  background-color: transparent;
+  font-family     : Product Sans;
+}
+
+
+.container .colegios li {
+  display        : flex;
   justify-content: space-between;
+  padding        : 10px 20px;
+  border-bottom  : 1px solid rgba(0, 0, 0, .12);
+}
+
+.loading {
+  justify-content: center;
+  align-items    : center;
+  display        : flex;
+  background     : white;
+  height         : 100px;
+}
+
+.loading::after {
+  content         : "";
+  width           : 50px;
+  height          : 50px;
+  border          : 5px solid rgba(0, 0, 0, .12);
+  border-top-color: #ff5722;
+  border-radius   : 50%;
+  transform       : rotate(0.16turn);
+  animation       : loading 1s ease infinite;
+}
+
+@keyframes loading {
+
+  /* Para safari */
+  from {
+    transform: rotate(0turn);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
 }

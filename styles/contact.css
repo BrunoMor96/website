@@ -99,10 +99,37 @@
   background-color: rgba(242, 90, 0, 0.05);
 }
 
+.thank-you {
+  display        : flex;
+  justify-content: center;
+  text-align     : center;
+  align-items    : center;
+  flex-direction : column;
+  color          : #606060;
+}
+
+.thank-you img {
+  width        : 60vh;
+  margin-bottom: 30px;
+}
+
+.thank-you span {
+  font-size: 30px;
+}
+
+.thank-you p {
+  font-size: 20px;
+  margin   : 20px 0 !important;
+}
+
 @media only screen and (max-width: 767px) {
 
   .contact-section .image {
     display: none;
+  }
+
+  .thank-you img {
+    width: 30vh;
   }
 
   .contact-section .premium {

@@ -1,90 +1,78 @@
-const form = document.getElementById("form");
-const search = document.getElementById("search");
-const result = document.getElementById("result");
-const more = document.getElementById("more");
+async function buscarCole(txtBusqueda) {
+  try {
+      var url = new URL('https://api.smiledu.com/base2/api/general/buscarEscuela');
+      let reqHeader = new Headers();
+      // reqHeader.append('referer', 'https://smiledu.com');
+      // reqHeader.append('origin', 'https://smiledu.com');
 
-const apiURL = "https://api.lyrics.ovh";
+      var myInit = {
+          "method" : 'GET',
+          "Access-Control-Allow-Origin": "https://www.smiledu.com",
+          "headers": reqHeader
+      };
+      var params = {
+          search: txtBusqueda
+      };
+      url.search = new URLSearchParams(params).toString();
+      var myRequest = new Request(url, myInit);
 
-async function searchSongs(term) {
-  const res = await fetch(`${apiURL}/suggest/${term}`);
-  const data = await res.json();
-  showData(data);
+      let r    = await fetch(myRequest);
+      let json = await r.json();
+      return json;
+  } catch (err) {
+      console.log(err);
+      return null;   
+  }
 }
 
-async function getLyrics(artist, songTitle) {
-  const res = await fetch(`${apiURL}/v1/${artist}/${songTitle}`);
-  const data = await res.json();
-  console.log(artist, songTitle);
-  if (data.error) {
-    showAlert(data.error);
+var tm;
+function buscar(e) {
+  document.getElementById("spinner").style.display = "flex";
+  if(document.getElementById("res")) {
+    document.getElementById("res").remove();
+  }
+  if(tm) {
+    clearTimeout(tm);
+  }
+  //console.log(e);
+  const txtSearch = document.getElementById("search").value;
+  if(txtSearch.length > 2) {
+    tm = setTimeout(async () => {
+      console.log("init busqueda...");
+      var res = '';
+      var coles = await buscarCole(txtSearch);
+      const result = document.getElementById("result");
+      res = `<ul id="res" class="colegios">`;
+      var labelPremium = '';
+      for(var r of coles) {
+        if(r.flg_premium == 1) {
+          labelPremium = '<img class="premium" height="15" src="https://smiledu.com/assets/images/searcher/premium_medal.png">';
+        } else {
+          labelPremium = '';
+        }
+        res += `<li style="display:flex">
+                    <span>
+                      <div class="escudo-cole">
+                        <img class="logo-cole" height="25" src="${r.escudo}">
+                          ${labelPremium}  
+                        <strong>${r.nombre}</strong>
+                      </div>
+                    </span>
+                    <button class="go-cole" onclick="openInNewTab('https://${r.dominio}.smiledu.com');">Ingresar</button>
+                </li>`;
+      }
+      res += `</ul>`;
+      result.innerHTML += res;
+      document.getElementById("spinner").style.display = "none";
+    }, 2000);
   } else {
-    const lyrics = data.lyrics.replace(/(\r\n|\r|\n)/g, "<br>");
-
-    result.innerHTML = `
-        <h2><strong>${artist}</strong> - ${songTitle}</h2>
-        <span>${lyrics}</span>
-    `;
+    if(document.getElementById("res")) {
+      document.getElementById("res").remove();
+    }
+    document.getElementById("spinner").style.display = "none";
   }
-    more.innerHTML = "";
 }
 
-async function getMoreSongs(url) {
-  const res = await fetch(`https://cors-anywhere.herokuapp.com/${url}`);
-  const data = await res.json();
-  showData(data);
-}
-
-function showData(data) {
-  result.innerHTML = `
-    <ul class="colegios">
-      ${data.data
-        .map(
-          (song) => `<li>
-      <span><strong>${song.artist.name}</strong> - ${song.title}</span>
-      <button class="btn" data-artist="${song.artist.name}" data-songtitle="${song.title}">Ingresar</button>
-    </li>`
-        )
-        .join("")}
-    </ul>
-    `;
-  // Pagination
-    if (data.prev || data.next) {
-      more.innerHTML = `
-                    ${
-                      data.prev
-                        ? `<button class="btn" onclick="getMoreSongs('${data.prev}')">Prev</button>`
-                        : ""
-                    }
-                    ${
-                      data.next
-                        ? `<button class="btn" onclick="getMoreSongs('${data.next}')">Next</button>`
-                        : ""
-                    }
-                    `;
-    } else more.innerHTML = "";
-}
-
-function showAlert(message) {
-  const notif = document.createElement("div");
-  notif.classList.add("toast");
-  notif.innerText = message;
-  document.body.appendChild(notif);
-  setTimeout(() => notif.remove(), 3000);
-}
-
-// Event Listeners
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  const searchTerm = search.value.trim();
-  if (!searchTerm) showAlert("Please type in a search term");
-  else searchSongs(searchTerm);
-});
-
-result.addEventListener("click", (e) => {
-  const clickedElement = e.target;
-  if (clickedElement.tagName === "BUTTON") {
-    const artist = clickedElement.getAttribute("data-artist");
-    const songTitle = clickedElement.getAttribute("data-songtitle");
-    getLyrics(artist, songTitle);
-  }
-});
+function openInNewTab(url) {
+  window.open(url, '_blank').focus();
+ }

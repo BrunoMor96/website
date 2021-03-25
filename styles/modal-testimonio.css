@@ -1,0 +1,72 @@
+.modal-kinder,
+.modal-school,
+.modal-group {
+  position        : fixed;
+  top             : 0;
+  left            : 0;
+  background-color: rgba(255, 255, 255, .95);
+  height          : 100%;
+  width           : 100%;
+  display         : flex;
+  align-items     : center;
+  justify-content : center;
+  z-index         : 99999;
+  opacity         : 0;
+  pointer-events  : none;
+  transition      : all 0.2s ease-in-out;
+}
+
+.show-kinder,
+.show-school,
+.show-group {
+  opacity       : 1;
+  pointer-events: auto;
+}
+
+
+.close-kinder:hover,
+.close-school:hover,
+.close-group:hover {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.close-kinder img,
+.close-school img,
+.close-group img {
+  width: 12px;
+}
+
+.video-kinder,
+.video-school,
+.video-group {
+  border       : none;
+  padding      : 20px;
+  border-radius: 5px;
+  box-shadow   : 0 11px 15px -7px rgb(0 0 0 / 20%), 0 24px 38px 3px rgb(0 0 0 / 14%), 0 9px 46px 8px rgb(0 0 0 / 12%);
+  margin       : auto;
+  background   : white;
+}
+
+.video-kinder iframe,
+.video-school iframe,
+.video-group iframe {
+  max-width : 80vw;
+  min-width : 60vw;
+  min-height: 70vh;
+  max-height: 80vh;
+}
+
+.close-kinder,
+.close-school,
+.close-group {
+  border       : none;
+  padding      : 15px;
+  font-size    : 12px;
+  outline      : none;
+  background   : transparent;
+  position     : absolute;
+  left         : 80%;
+  border-radius: 50%;
+  margin-top   : -50px;
+  margin-left  : 15px;
+}
